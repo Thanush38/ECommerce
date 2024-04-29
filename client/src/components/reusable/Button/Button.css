@@ -1,0 +1,17 @@
+.greenButton {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove button border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .greenButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

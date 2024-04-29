@@ -1,0 +1,36 @@
+.navbarContainer {
+    background-color: #32de84; /* Background color of the navbar container */
+    padding: 10px; /* Padding around the navbar container */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarTitle {
+    color: #fff; /* Text color of the navbar title */
+    font-size: 24px; /* Font size of the navbar title */
+  }
+  
+  .navbarRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbarLink {
+    color: #fff; /* Text color of the navbar links */
+    margin-right: 20px; /* Spacing between navbar links */
+    text-decoration: none; /* Remove underline from navbar links */
+  }
+  
+  .navbarLink:hover {
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  .navbarCart {
+    color: #fff; /* Text color of the cart */
+    font-size: 18px; /* Font size of the cart text */
+  }
+  
