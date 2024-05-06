@@ -2,11 +2,11 @@ import React from 'react'
 import './NavBar.css'
 import Button from '../reusable/Button/Button.tsx'
 import Search from './Search/Search.tsx'
+import Login from '../Login/Login.tsx'
+
 const NavBar = (props) => {
 
-    const handleLogin = () => {
-        console.log("Login")
-    }
+
   return (
     <div className="navbarContainer">
       <div className="navbar">
@@ -22,7 +22,7 @@ const NavBar = (props) => {
 
           <div className="navbarCart">Cart: </div>
             <div className="NavBarLoginContainer">
-                <Button text="Login" onClick={handleLogin} />
+                <Login />
 
             </div>
         </div>
