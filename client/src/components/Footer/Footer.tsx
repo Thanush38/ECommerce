@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {ExampleLoaderComponent} from "../../dev/palette";
 const Footer = () => {
   return (
     <div className='footerContainer'>
@@ -14,7 +15,6 @@ const Footer = () => {
         <p>Created by: <a href='thanushdinesh.com'>Thanush</a></p>
         </div>
         </div>
-
     </div>
   )
 }

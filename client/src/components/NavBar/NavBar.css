@@ -16,7 +16,9 @@
   
   .navbarRight {
     display: flex;
+    width: 40vw;
     align-items: center;
+    justify-content: space-around;
   }
   
   .navbarLink {
@@ -33,4 +35,6 @@
     color: #fff; /* Text color of the cart */
     font-size: 18px; /* Font size of the cart text */
   }
-  
+  .active {
+    color: #000; /* Text color of the active link */
+  }
