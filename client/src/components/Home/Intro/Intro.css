@@ -1,0 +1,9 @@
+.introWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url("../../../images/introPage.png");
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+}

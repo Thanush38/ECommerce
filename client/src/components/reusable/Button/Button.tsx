@@ -1,6 +1,13 @@
 import React from 'react'
 import './Button.css'
-const Button = (props) => {
+
+type ButtonProps = {
+    text: string,
+    onClick: () => void
+
+}
+
+const Button: React.FC<ButtonProps> = (props) => {
   return (
     <div className="buttonContainer">
       <button className="greenButton" onClick={props.onClick}>{props.text}</button>

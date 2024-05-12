@@ -1,8 +1,7 @@
-
 import './App.css';
-import Home from './components/Home/Home.tsx'
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
-import ProductPage from './components/ProductPage/ProductPage.tsx'
+import Home from './components/Home/Home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ProductPage from './components/ProductPage/ProductPage'
 function App() {
   return (
       <Router>

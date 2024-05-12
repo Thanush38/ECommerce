@@ -1,10 +1,14 @@
 import React from 'react'
 import './NavBar.css'
-import Button from '../reusable/Button/Button.tsx'
-import Search from './Search/Search.tsx'
-import Login from '../Login/Login.tsx'
+import Button from '../reusable/Button/Button'
+import Search from './Search/Search'
+import Login from '../Login/Login'
 
-const NavBar = (props) => {
+type NavBarProps = {
+  active: string
+}
+
+const NavBar: React.FC<NavBarProps> = (props) => {
 
 
   return (

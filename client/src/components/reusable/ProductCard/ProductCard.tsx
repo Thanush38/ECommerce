@@ -1,6 +1,17 @@
 import React from 'react';
 import './ProductCard.css';
-const ProductCard = (props) => {
+
+type ProductCardProps = {
+    image: string;
+    title: string;
+    sizes: string[];
+    price: string;
+};
+
+type size = {
+    size: string;
+}
+const ProductCard = (props: ProductCardProps) => {
     console.log(props)
     const getSizes = () => {
         return props.sizes.map((size) => {

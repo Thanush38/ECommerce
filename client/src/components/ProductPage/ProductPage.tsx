@@ -1,12 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import './ProductPage.css';
-import NavBar from "../NavBar/NavBar.tsx";
-import ProductCard from "../reusable/ProductCard/ProductCard.tsx";
+import NavBar from "../NavBar/NavBar";
+import ProductCard from "../reusable/ProductCard/ProductCard";
+import Footer from "../Footer/Footer";
 
-import Footer from "../Footer/Footer.tsx";
+interface Product {
+    name: string;
+    image: string;
+    price: string;
+    sizes: string[];
+}
 const ProductPage = () => {
 
-    const [products, setProducts] = useState(null);
+    const [products, setProducts] = useState<Product[] | null>(null);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -28,9 +34,9 @@ const ProductPage = () => {
             console.log(error);
         }
     };
-    const productss = products;
 
-    const getHTML = products?.map((product) => {
+
+    const getHTML = products?.map((product: Product) => {
 
         return <div className={"singleProducts"}><ProductCard title={product.name} image={product.image} price={product.price} sizes={product.sizes} /></div>;
     });

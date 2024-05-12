@@ -1,0 +1,12 @@
+.navBarLoginSection {
+    position: relative;
+}
+
+.navbarDrop {
+    top: 100%; /* Position the dropdown below the navBarLoginSection */
+
+    /* Additional styles for dropdown */
+
+    background: white;
+    transition: all linear 0.3s;
+}
