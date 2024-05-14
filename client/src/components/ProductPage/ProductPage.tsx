@@ -8,7 +8,9 @@ interface Product {
     name: string;
     image: string;
     price: string;
-    sizes: string[];
+    sizes: {[key: string]: number};
+    keyWords: string[];
+
 }
 const ProductPage = () => {
 

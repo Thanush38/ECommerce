@@ -8,13 +8,13 @@
     --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
 
     position: relative;
-
+    z-index: 5;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 
     padding: 1rem;
-    width: 14rem;
+    min-width: 14rem;
     background-color: var(--bg-card);
 
     border-radius: 1rem;
@@ -29,7 +29,7 @@
 
     width: 100%;
     height: 8rem;
-    background-color: var(--primary-800);
+    background: url('https://images.indianexpress.com/2020/02/vijay.jpg?w=414') no-repeat center center;
 
     border-radius: 0.5rem;
 }
@@ -136,4 +136,64 @@
 
 .cart-button .cart-icon {
     width: 1rem;
+}
+
+
+.imageZoomIcon {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: var(--light);
+}
+
+.cardImageContainer {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out;
+    position: relative;
+
+
+}
+
+
+.cardImageContainer::before {
+    content: 'Enlarge';
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index:  20;
+}
+
+.cardImageContainer:hover::before {
+    opacity: 1;
+}
+
+.cardImageContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Gray filter */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cardImageContainer:hover::after {
+    opacity: 1;
 }

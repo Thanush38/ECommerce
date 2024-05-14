@@ -20,16 +20,16 @@ const Login = () => {
         <div>
             <div className="navBarLoginSection" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <Button text="Login" onClick={handleLogin}/>
-                {/*{dropdown && <div className="navbarDrop">*/}
+                {dropdown && <div className="navbarDrop">
 
-                {/*        <PopUp />*/}
+                        <PopUp />
 
-                {/*</div>}*/}
-                <div className="navbarDrop">
+                </div>}
+                {/*<div className="navbarDrop">*/}
 
-                    <PopUp/>
+                {/*    <PopUp/>*/}
 
-                </div>
+                {/*</div>*/}
 
 
             </div>

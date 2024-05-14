@@ -1,34 +1,120 @@
 import React from 'react';
+import styled from 'styled-components';
 import './ProductCard.css';
+import { TbZoomInArea } from "react-icons/tb";
+type ImageProps = {
+    image: string;
+    children?: React.ReactNode;
+};
+type ImageContainerProps = {
+    image: string;
+}
+
+const ImageContainerWrapper:React.FC<ImageProps> = styled.div`
+    
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 8rem;
+    background: url(${(props: ImageProps) => props.image}) no-repeat center;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+
+    //:before {
+    //    content: 'Enlarge';
+    //    position: absolute;
+    //    top: 50%;
+    //    left: 50%;
+    //    transform: translate(-50%, -50%);
+    //    color: white;
+    //    font-size: 1.5rem;
+    //    font-weight: bold;
+    //    opacity: 0;
+    //    transition: opacity 0.3s ease-in-out;
+    //    z-index:  20;
+    //}
+    //:hover::before {
+    //    opacity: 1;
+    //}
+    //::after {
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    width: 100%;
+    //    height: 100%;
+    //    background-color: rgba(0, 0, 0, 0.5); /* Gray filter */
+    //    opacity: 0;
+    //    transition: opacity 0.3s ease-in-out;
+    //}
+    //:hover::after {
+    //    opacity: 1;
+    //}
+    
+    
+    
+`;
+
+const ImageContainer: React.FC<ImageProps> = ({ image, children }) => {
+    return <ImageContainerWrapper image={image}>{children}</ImageContainerWrapper>;
+};
 
 type ProductCardProps = {
     image: string;
     title: string;
-    sizes: string[];
+    sizes: {
+        [key: string]: number
+    };
     price: string;
 };
 
 type size = {
-    size: string;
+    size: {
+        [key: string]: number
+    };
 }
 const ProductCard = (props: ProductCardProps) => {
-    console.log(props)
+    const [price, setPrice] = React.useState<string>("Select Size");
+
+    const priceClickHandler = (givenPrice:number) => {
+        let stringNumber: string = givenPrice.toString();
+        setPrice("$" +stringNumber);
+    }
+    const setPriceHandler = () => {
+        setPrice("Select Size");
+    }
     const getSizes = () => {
-        return props.sizes.map((size) => {
-            return (
+        let ret: JSX.Element[] = [];
+        let i : number = 0;
+        for (const size in props.sizes) {
+            ret.push(
                 <li className="item-list">
-                    <button className="item-list-button">{size}</button>
+                    <button className="item-list-button" onClick={() => priceClickHandler(props.sizes[size])}>
+                        {size}
+                    </button>
                 </li>
             );
-        });
+            i++;
+        };
+        return ret;
     }
+
+
     return (
         <div className="card">
-            <div className="image_container">
-                <svg viewBox="0 0 24 24" className="image">
-                    <image xlinkHref={props.image} width="24" height="24" />
-                </svg>
-            </div>
+
+            <ImageContainer image={props.image}>
+                <div className="cardImageContainer">
+                    <div className="imageZoomIcon">
+                        <TbZoomInArea size={30} color="white"/>
+                    </div>
+                </div>
+            </ImageContainer>
+
 
 
             <div className="title">
@@ -42,7 +128,7 @@ const ProductCard = (props: ProductCardProps) => {
             </div>
             <div className="action">
                 <div className="price">
-                    <span>{props.price}</span>
+                    <span>{price}</span>
                 </div>
                 <button className="cart-button">
                     <svg
@@ -68,3 +154,5 @@ const ProductCard = (props: ProductCardProps) => {
 };
 
 export default ProductCard;
+
+
