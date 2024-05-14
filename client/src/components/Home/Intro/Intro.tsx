@@ -10,9 +10,11 @@ const Intro = () => {
         <div className="introWrapper">
             <div className="introContainer">
                 <div className="introText">
-                    <h1 >Get the best out of your day</h1>
+                    <h1 >Get the Best Posters</h1>
                     <p>Ultra High 4K Poster Pictures</p>
+                    <div className="introBTNWrap">
                     <Button text="Browse Options" onClick={viewProducts}></Button>
+                    </div>
                 </div>
             </div>
         </div>

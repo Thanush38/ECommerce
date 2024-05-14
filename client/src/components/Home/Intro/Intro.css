@@ -7,3 +7,20 @@
     background-size: contain;
     /*background-repeat: no-repeat;*/
 }
+
+.introText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 185, 255);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+}
+
+.introBTNWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+.aboutUsContainer{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+
+.aboutTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.aboutImageContainer{
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}
+
+.aboutImage {
+    width: 50vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.aboutInfo{
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}

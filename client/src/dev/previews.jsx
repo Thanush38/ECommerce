@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer.tsx";
 import ProductPage from "../components/ProductPage/ProductPage.tsx";
 import ProductCard from "../components/reusable/ProductCard/ProductCard.tsx";
 import App from "../App.tsx";
+import Policy from "../components/InfoPages/Policy/Policy";
 
 const ComponentPreviews = () => {
     return (
@@ -23,6 +24,9 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/App">
                 <App/>
+            </ComponentPreview>
+            <ComponentPreview path="/Policy">
+                <Policy/>
             </ComponentPreview>
         </Previews>
     )

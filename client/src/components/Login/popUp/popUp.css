@@ -6,7 +6,6 @@
     top: 100%; /* Position the container below its parent */
     width: calc(100% + 270px); /* Extend the width beyond the viewport by 200px */
     height: 450px;
-    background-color: red;
     z-index: 1000;
     left: -250px; /* Shift the container to the left by 200px */
 }
@@ -23,7 +22,7 @@
     --font-color: #323232;
     --font-color-sub: #666;
     --bg-color: #fff;
-    --bg-color-alt: #666;
+    --bg-color-alt: rgb(7, 185, 255);
     --main-color: #323232;
     /* display: flex; */
     /* flex-direction: column; */
@@ -81,7 +80,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--bg-colorcolor);
+    background-color: var(--bg-color);
     transition: 0.3s;
 }
 
@@ -147,7 +146,7 @@
     justify-content: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: lightgrey;
+    background: rgb(7, 185, 255);
     gap: 20px;
     border-radius: 5px;
     border: 2px solid var(--main-color);
