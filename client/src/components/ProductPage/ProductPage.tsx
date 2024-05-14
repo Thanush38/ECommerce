@@ -3,7 +3,7 @@ import './ProductPage.css';
 import NavBar from "../NavBar/NavBar";
 import ProductCard from "../reusable/ProductCard/ProductCard";
 import Footer from "../Footer/Footer";
-
+import ImageViewer from "../reusable/ImageViewer/ImageViewer";
 interface Product {
     name: string;
     image: string;
@@ -15,6 +15,8 @@ interface Product {
 const ProductPage = () => {
 
     const [products, setProducts] = useState<Product[] | null>(null);
+    const [showImage, setShowImage] = useState<boolean>(false);
+    const [image, setImage] = useState<string>("");
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -37,16 +39,27 @@ const ProductPage = () => {
         }
     };
 
+    const handleImageClick = (imageLink:string) => {
+        setShowImage(true);
+        setImage(imageLink)
+    }
+
+    const handleImageClose = () => {
+        setShowImage(false);
+    }
+
 
     const getHTML = products?.map((product: Product) => {
 
-        return <div className={"singleProducts"}><ProductCard title={product.name} image={product.image} price={product.price} sizes={product.sizes} /></div>;
+        return <div className={"singleProducts"}><ProductCard title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)}/></div>;
     });
 
     return (
         <div>
             <NavBar active="products"/>
                 <div className="productPage">
+
+                    {showImage && <ImageViewer image={image} func={handleImageClose}/>}
                     {getHTML}
                 </div>
             <Footer />
