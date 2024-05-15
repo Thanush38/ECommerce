@@ -2,8 +2,12 @@ import React from 'react'
 import './Sections.css'
 import {useState, useEffect} from 'react'
 import Cards from './Cards/Cards'
+import {useNavigate} from 'react-router-dom'
+
 const Sections = () => {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
+    const navigate = useNavigate();
+
 
     function getCurrentDimension(){
         return {
@@ -25,7 +29,7 @@ const Sections = () => {
     }, [screenSize])
 
     const cardClick = (content:string) => {
-        console.log(content + "Card Clicked")
+        navigate(`/products/${content}`)
     }
 
     const getInfo = (i:number) =>{

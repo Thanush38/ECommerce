@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {useParams} from 'react-router-dom';
 import './ProductPage.css';
 import NavBar from "../NavBar/NavBar";
 import ProductCard from "../reusable/ProductCard/ProductCard";
@@ -17,6 +18,8 @@ const ProductPage = () => {
     const [products, setProducts] = useState<Product[] | null>(null);
     const [showImage, setShowImage] = useState<boolean>(false);
     const [image, setImage] = useState<string>("");
+    let {search} = useParams();
+
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -28,11 +31,20 @@ const ProductPage = () => {
             }
         };
         fetchProducts();
-    }, []);
+    }, [search]);
     const getProducts = async () => {
         try {
-            const response = await fetch("http://localhost:8080/server-1.0-SNAPSHOT/api/contents/products");
+
+            console.log(search);
+            let url = "";
+            if(search){
+                url = `http://localhost:8080/server-1.0-SNAPSHOT/api/contents/products/${search}`
+            }else{
+                url = "http://localhost:8080/server-1.0-SNAPSHOT/api/contents/products";
+            }
+            const response:Response = await fetch(url);
             const data = await response.json();
+            console.log(data)
             return data.items;
         } catch (error) {
             console.log(error);
