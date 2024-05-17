@@ -48,7 +48,7 @@
     text-align: center;
 }
 
-label {
+.imageViewerLabel {
     font-size: .8em;
     line-height: 4em;
     text-transform: uppercase;

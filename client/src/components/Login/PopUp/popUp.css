@@ -1,4 +1,5 @@
 
+
 .popUpContainer {
     position: absolute;
     right: 0; /* Align the container to the right */
@@ -16,7 +17,7 @@
     align-items: center;
 }
 
-.wrapper {
+.popWrapper {
     --input-focus: #2d8cf0;
     --font-color: #323232;
     --font-color-sub: #666;
@@ -29,7 +30,7 @@
 
 }
 /* switch card */
-.switch {
+.popUpSwitch {
     position: relative;
     display: flex;
     flex-direction: column;

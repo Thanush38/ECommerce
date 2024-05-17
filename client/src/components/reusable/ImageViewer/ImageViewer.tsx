@@ -12,7 +12,7 @@ const ImageViewer = (props: ImageViewerProps) => {
             <div className={"imageViewerClose"} onClick={props.func}>
                 <div className="imageViewerOuter">
                     <div className="imageViewerInner">
-                        <label>Back</label>
+                        <label className={"imageViewerLabel"}>Back</label>
                     </div>
                 </div>
             </div>
