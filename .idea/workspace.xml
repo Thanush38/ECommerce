@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/hidden/Mail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer.java" afterDir="false" />
-    </list>
+    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +128,7 @@
       <workItem from="1715033898726" duration="11336000" />
       <workItem from="1715303163615" duration="2621000" />
       <workItem from="1715477206460" duration="43404000" />
-      <workItem from="1716296317083" duration="13350000" />
+      <workItem from="1716296317083" duration="13662000" />
     </task>
     <servers />
   </component>
