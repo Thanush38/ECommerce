@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="" />
+    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +82,7 @@
       <recent name="$PROJECT_DIR$/client/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src/main/resources/hidden" />
       <recent name="$PROJECT_DIR$/client/src/store" />
       <recent name="$PROJECT_DIR$/client/src" />
       <recent name="$PROJECT_DIR$/client/store" />
@@ -128,7 +131,7 @@
       <workItem from="1715033898726" duration="11336000" />
       <workItem from="1715303163615" duration="2621000" />
       <workItem from="1715477206460" duration="43404000" />
-      <workItem from="1716296317083" duration="13662000" />
+      <workItem from="1716296317083" duration="13854000" />
     </task>
     <servers />
   </component>
