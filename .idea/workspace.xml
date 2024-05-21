@@ -5,113 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Error/Error.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Error/Error.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Home.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Sections/Cards/Cards.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Sections/Cards/Cards.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Sections/Sections.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Sections/Sections.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/AboutUs/AboutUs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/AboutUs/AboutUs.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/Policy/Policy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/Policy/Policy.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/LoggedShow/LoggedShow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/LoggedShow/LoggedShow.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/Login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/Login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/PopUp/PopUp.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/PopUp/popUp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Search/Search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Search/Search.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UserInfo/UserInfo.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/ImageViewer/ImageViewer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/ImageViewer/ImageViewer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/ProductCard/ProductCard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/ProductCard/ProductCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dev/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dev/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dev/palette.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dev/previews.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/dev/useInitial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/images/PosterLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/images/Screenshot 2024-05-12 at 1.00.27 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/images/introPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/CORSEnabler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/ImageServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/ProductReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/CORSEnabler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/ImageServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/ProductReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/META-INF/MANIFEST 2.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/Items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/CORSEnabler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/ImageServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/JSONFileHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/ProductReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/json-20220924.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/hidden/Mail.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +132,7 @@
       <workItem from="1715033898726" duration="11336000" />
       <workItem from="1715303163615" duration="2621000" />
       <workItem from="1715477206460" duration="43404000" />
-      <workItem from="1716296317083" duration="12521000" />
+      <workItem from="1716296317083" duration="13350000" />
     </task>
     <servers />
   </component>
