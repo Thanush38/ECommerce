@@ -65,7 +65,7 @@ const Login = () => {
         }
 
             return <div className="navbarLogout">
-                <LoggedShow email={user.email} logOut={handleLogout}/>
+                <LoggedShow email={user.email} logOut={handleLogout} image={user.photoURL}/>
             </div>
 
 

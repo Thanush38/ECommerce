@@ -24,7 +24,6 @@ const NavBar: React.FC<NavBarProps> = (props) => {
                 <Search />
             </div>
 
-          <div className="navbarCart">Cart: </div>
             <div className="NavBarLoginContainer">
                 <Login />
 

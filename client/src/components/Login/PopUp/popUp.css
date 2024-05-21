@@ -214,3 +214,36 @@
     color: var(--font-color);
     cursor: pointer;
 }
+
+
+.google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+    background: #fff;
+    border: 2px solid #747474;
+    transition: all 0.3s;
+}
+
+
+
+.google-login-button:hover {
+    background: #f1f1f1;
+    border: 2px solid #2d8cf0;
+}
+
+
+.google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+}

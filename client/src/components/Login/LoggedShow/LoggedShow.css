@@ -33,6 +33,12 @@
     transition: var(--btn-transition);
 }
 
+.button-message:hover .profileImage {
+    width: 40px;
+    height: 40px;
+    transition: var(--btn-transition);
+}
+
 .button-message:active {
     transform: scale(0.99);
 }
@@ -159,8 +165,8 @@
     text-align: center;
     margin-left: 8px;
     font-size: 12px;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     background-color: var(--bg-color-sup);
     border-radius: 20px;
 }
