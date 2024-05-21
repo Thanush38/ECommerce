@@ -106,11 +106,22 @@
     gap: 1rem;
 }
 
-.price {
+.priceStyleActive {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--light);
 }
+.priceStyle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light);
+    width: 62px;
+    .priceSpan {
+        display: inline-block;
+    }
+
+}
+
 
 .cart-button {
     cursor: pointer;
@@ -196,4 +207,20 @@
 
 .cardImageContainer:hover::after {
     opacity: 1;
+}
+
+.CartBtn:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+}
+
+.CartBtn:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+}
+
+.CartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
 }

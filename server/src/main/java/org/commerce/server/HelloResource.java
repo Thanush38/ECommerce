@@ -1,14 +1,14 @@
 package org.commerce.server;
 
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.POST;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import org.commerce.server.util.ProductReader;
+import org.commerce.server.util.EmailServer;
 
 @Path("/contents")
 public class HelloResource {
     ProductReader reader = new ProductReader();
+    EmailServer emailServer = new EmailServer();
     @GET
     @Produces("text/plain")
     public String hello() {
@@ -30,6 +30,14 @@ public class HelloResource {
         }
         return data;
 
+    }
+
+    @POST
+    @Path("/contactemail")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public String contactEmail(String data) {
+        return emailServer.sendEmail(data);
     }
 
 

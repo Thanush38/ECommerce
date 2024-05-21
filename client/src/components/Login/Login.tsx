@@ -19,13 +19,10 @@ const Login = () => {
                 // User is signed in, see docs for a list of available properties
                 // https://firebase.google.com/docs/reference/js/firebase.User
                 setUser(user)
-                console.log("displayName", user.displayName)
-                console.log("email", user.email)
                 setLoggedInUser(true)
             } else {
                 // User is signed out
                 // ...
-                console.log("user is logged out")
                 setLoggedInUser(false)
             }
         });

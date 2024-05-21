@@ -2,6 +2,41 @@ import React from 'react'
 import './Footer.css'
 import {ExampleLoaderComponent} from "../../dev/palette";
 const Footer = () => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const url:string = "http://localhost:8080/server-1.0-SNAPSHOT/api/contents/contactemail";
+    const contentType: string = 'application/json';
+
+    let name:string = (e.target as any).gname.value;
+    let email:string = (e.target as any).gemail.value;
+    let message:string = (e.target as any).gmsg.value;
+
+    const payload = {
+      name: name,
+      email: email,
+      message: message
+    }
+
+    const request = new XMLHttpRequest();
+    request.open("POST", url);                              // setting the method
+    request.setRequestHeader("Content-Type", "application/json");  // setting the sending content-type
+    request.setRequestHeader("Accept", contentType);
+
+    // on response handler
+    request.onload = () => {
+      if (request.status !== 200) {
+        console.error   ("Something went wrong went contacting the server");
+        return
+      }
+      console.log("Received from the server: ", request.responseText) // this contains the received payload
+    }
+
+    console.log("sending the payload")
+    request.send(JSON.stringify(payload));
+
+    console.log('Form Submitted');
+  }
+
   return (
     <div className='footerContainer'>
       <body>
@@ -48,10 +83,10 @@ const Footer = () => {
           </div>
           <div className="g-i-t">
             <div className="footer-title">Get in Touch</div>
-            <form action="/" method="post" className="space-y-2">
-              <input type="text" name="g-name" className="g-inp" id="g-name" placeholder='Name'/>
-              <input type="email" name="g-email" className="g-inp" id="g-email" placeholder='Email'/>
-              <textarea  name="g-msg" className="g-inp h-40 resize-none" id="g-msg"
+            <form onSubmit={handleFormSubmit} method="post" className="space-y-2">
+              <input type="text" name="gname" className="g-inp" id="gname" placeholder='Name'/>
+              <input type="email" name="gemail" className="g-inp" id="gemail" placeholder='Email'/>
+              <textarea  name="gmsg" className="g-inp h-40 resize-none" id="gmsg"
                         placeholder='Message...'></textarea>
               <button type="submit" className='f-btn'>Submit</button>
             </form>

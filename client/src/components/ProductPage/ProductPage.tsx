@@ -5,7 +5,11 @@ import NavBar from "../NavBar/NavBar";
 import ProductCard from "../reusable/ProductCard/ProductCard";
 import Footer from "../Footer/Footer";
 import ImageViewer from "../reusable/ImageViewer/ImageViewer";
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store/Store';
+import { setCart, addItem, removeItem, clearCart } from '../../store/Cart';
 interface Product {
+    id: number;
     name: string;
     image: string;
     price: string;
@@ -19,6 +23,63 @@ const ProductPage = () => {
     const [showImage, setShowImage] = useState<boolean>(false);
     const [image, setImage] = useState<string>("");
     let {search} = useParams();
+    const dispatch = useDispatch();
+    const cart = useSelector((state: RootState) => state.cart.items);
+
+    // const saveProduct = async (product: Product) => {
+    //     let currentCart = localStorage.getItem("cart");
+    //     if (currentCart) {
+    //         let cart = JSON.parse(currentCart);
+    //         cart.push(product);
+    //         console.log(cart);
+    //         localStorage.setItem("cart", JSON.stringify(cart));
+    //         return;
+    //     }else {
+    //         localStorage.setItem("cart", "[" + JSON.stringify(product) + "]");
+    //     }
+    //     window.dispatchEvent(new Event('storage'))
+    // }
+
+    useEffect(() => {
+        const fetchCart = () => {
+            const cart = localStorage.getItem("cart");
+            if (cart) {
+                dispatch(setCart(JSON.parse(cart)));
+            } else {
+                dispatch(setCart([]));
+            }
+        };
+
+        fetchCart();
+
+        const handleStorageChange = (event: StorageEvent) => {
+            if (event.key === "cart") {
+                fetchCart();
+            }
+        };
+
+        window.addEventListener('storage', handleStorageChange);
+
+        return () => {
+            window.removeEventListener('storage', handleStorageChange);
+        };
+    }, [dispatch]);
+
+    const handleAddItem = (item: Product) => {
+        dispatch(addItem(item));
+        localStorage.setItem('cart', JSON.stringify([...cart, item]));
+    };
+
+    const handleRemoveItem = (id: number) => {
+        dispatch(removeItem(id));
+        const updatedCart = cart.filter(item => item.id !== id);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    };
+
+    const handleClearCart = () => {
+        dispatch(clearCart());
+        localStorage.removeItem('cart');
+    };
 
 
     useEffect(() => {
@@ -63,13 +124,13 @@ const ProductPage = () => {
 
     const getHTML = products?.map((product: Product) => {
 
-        return <div className={"singleProducts"}><ProductCard title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)}/></div>;
+        return <div className={"singleProducts"}><ProductCard key={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} cartFunc={()=>handleAddItem(product)}/></div>;
     });
 
     return (
         <div>
             <NavBar active="products"/>
-                <div className="productPage">
+                <div className="productPage" >
 
                     {showImage && <ImageViewer image={image} func={handleImageClose}/>}
                     {getHTML}
