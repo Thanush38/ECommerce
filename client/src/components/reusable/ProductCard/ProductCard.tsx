@@ -74,7 +74,7 @@ const ProductCard = (props: ProductCardProps) => {
     }
 
     const navigate = useNavigate();
-
+    //
     const handleProductClick = () => {
         console.log("Product Clicked")
         navigate("/product");

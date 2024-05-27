@@ -73,10 +73,16 @@ const LoggedShow = (props: LoggedShowProps) => {
     useEffect(() => {
         const handleStorage = () => {
             const cart = localStorage.getItem("cart");
+            let count = 0;
             if (cart) {
                 const parsedCart = JSON.parse(cart);
+                console.log("parsedCart", parsedCart);
                 setCurrentCart(parsedCart);
-                setCartNumber(parsedCart.length);
+
+                parsedCart.forEach((item: any) => {
+                    count += item.quantity;
+                });
+                setCartNumber(count);
             } else {
                 setCurrentCart([]);
                 setCartNumber(0);
