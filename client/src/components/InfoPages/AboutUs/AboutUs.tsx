@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutUs.css';
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
-import LogoImage from "../../../images/PosterLogo.png"
+import LogoImage from "../../../images/WhiteLogo.png"
 
 const AboutUs = () => {
     return (

@@ -2,12 +2,16 @@ package org.commerce.server;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import org.commerce.server.util.ImageReader;
 import org.commerce.server.util.ProductReader;
 import org.commerce.server.util.EmailServer;
+import jakarta.ws.rs.core.Response;
 
 @Path("/contents")
 public class HelloResource {
     ProductReader reader = new ProductReader();
+    ImageReader imageReader = new ImageReader();
     EmailServer emailServer = new EmailServer();
     @GET
     @Produces("text/plain")
@@ -18,7 +22,24 @@ public class HelloResource {
     @GET
     @Path("/products")
     public String products() {
+//        String data =  reader.readFileContents("Items/ItemsPractice.json");
+
+
         return reader.readFileContents("Items/ItemsPractice.json");
+
+    }
+
+    @GET
+    @Path("/product")
+    public String getProduct() {
+        String data = reader.readFileContents("Items/ImplementVijay.json");
+//
+        String retData = imageReader.addImages(data);
+        return retData;
+
+//        return reader.readFileContents("Items/ImplementVijay.json");
+
+
     }
 
     @GET
@@ -34,10 +55,14 @@ public class HelloResource {
 
     @POST
     @Path("/contactemail")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces("application/json")
     @Consumes(MediaType.APPLICATION_JSON)
-    public String contactEmail(String data) {
-        return emailServer.sendEmail(data);
+    public Response contactEmail(String data) {
+        String ret = emailServer.sendEmail(data);
+        return Response.status(200)//return the presion value as a response object
+                .header("Access-Control-Allow-Origin","*")
+                .header("Content-Type", "application/json")
+                .entity(ret).build();
     }
 
 

@@ -1,24 +1,25 @@
 package org.commerce.server.util;
 import java.util.Properties;
-//import jakarta.mail.Message;
-//import jakarta.mail.MessagingException;
-//import jakarta.mail.PasswordAuthentication;
-//import jakarta.mail.Session;
-//import jakarta.mail.Transport;
-//import jakarta.mail.internet.InternetAddress;
-//import jakarta.mail.internet.MimeMessage;
-//import jakarta.mail.Authenticator;
+import jakarta.mail.Message;
+import jakarta.mail.MessagingException;
+import jakarta.mail.PasswordAuthentication;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.Authenticator;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import javax.mail.Authenticator;
+//import javax.mail.Message;
+//import javax.mail.MessagingException;
+//import javax.mail.PasswordAuthentication;
+//import javax.mail.Session;
+//import javax.mail.Transport;
+//import javax.mail.internet.InternetAddress;
+//import javax.mail.internet.MimeMessage;
+//import javax.mail.Authenticator;
+
+
 import org.json.JSONObject;
-import org.json.JSONArray;
 public class EmailServer {
     ProductReader reader = new ProductReader();
     public String sendEmail(String data) {
@@ -45,6 +46,7 @@ public class EmailServer {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", tokens.getString("host"));
         props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
         //create the Session object
         Authenticator authenticator = new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -83,6 +85,7 @@ public class EmailServer {
 
     }
 
+
     public String EmailContent(JSONObject data){
         String content = "<h1>New Email From " + data.getString("name") + "</h1>";
         content += "<p>Email: " + data.getString("email") + "</p>";
@@ -93,7 +96,9 @@ public class EmailServer {
 
     public static void main(String[] args) {
         EmailServer server = new EmailServer();
-        String dummy = "{\"name\":\"John Doe\",\"email\":\"thanush38@outlook.com\",\"message\":\"Hello World\"}";
+        String dummy = "{\"name\":\"John Doe\",\"email\":\"thanush38@outlook.com\",\"message\":\"bandard\"}";
         server.sendEmail(dummy);
     }
+
+
 }

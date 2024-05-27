@@ -15,6 +15,7 @@ interface Product {
     price: string;
     sizes: {[key: string]: number};
     keyWords: string[];
+    images: string[];
 
 }
 const ProductPage = () => {
@@ -26,20 +27,7 @@ const ProductPage = () => {
     const dispatch = useDispatch();
     const cart = useSelector((state: RootState) => state.cart.items);
 
-    // const saveProduct = async (product: Product) => {
-    //     let currentCart = localStorage.getItem("cart");
-    //     if (currentCart) {
-    //         let cart = JSON.parse(currentCart);
-    //         cart.push(product);
-    //         console.log(cart);
-    //         localStorage.setItem("cart", JSON.stringify(cart));
-    //         return;
-    //     }else {
-    //         localStorage.setItem("cart", "[" + JSON.stringify(product) + "]");
-    //     }
-    //     window.dispatchEvent(new Event('storage'))
-    // }
-
+    // Get cart from local storage
     useEffect(() => {
         const fetchCart = () => {
             const cart = localStorage.getItem("cart");
@@ -51,7 +39,7 @@ const ProductPage = () => {
         };
 
         fetchCart();
-
+        // Listen for changes in local storage
         const handleStorageChange = (event: StorageEvent) => {
             if (event.key === "cart") {
                 fetchCart();
@@ -65,6 +53,7 @@ const ProductPage = () => {
         };
     }, [dispatch]);
 
+    // Add item to cart
     const handleAddItem = (item: Product) => {
         dispatch(addItem(item));
         localStorage.setItem('cart', JSON.stringify([...cart, item]));

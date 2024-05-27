@@ -1,19 +1,13 @@
-FROM ubuntu:latest
-LABEL authors="thanush"
+FROM    maven:3.6.0-jdk-8
 
-ENTRYPOINT ["top", "-b"]
+RUN     mkdir /docker
 
-# Use a base image with your desired Jakarta EE runtime, e.g., Payara Server
-FROM payara/server-full:latest
+WORKDIR /docker
 
-# Set environment variables
-ENV DEPLOY_DIR /opt/payara/deployments
+COPY    pom.xml .
+RUN     mvn dependency:resolve
 
-# Copy your WAR or EAR file to the deployments directory
-COPY server.war $DEPLOY_DIR/
 
-# Expose the port your Jakarta EE application will run on
-EXPOSE 8080
+COPY    src .
 
-# Start Payara Server
-CMD ["start-domain", "--verbose"]
+RUN     mvn clean verify
