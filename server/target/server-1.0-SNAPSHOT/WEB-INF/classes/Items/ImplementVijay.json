@@ -1,0 +1,24 @@
+{"items":
+
+    {
+        "id": "1123",
+        "name": "Leo Vijay",
+        "price": 100,
+        "quantity": 1,
+        "description": "This is a poster made for the Movie Leo. The Posters contains Thalapathy Vijay and Sanjay Dutt, This movie was directed by Lokesh Kanagaraj. ",
+        "image": "https://i.pinimg.com/originals/4e/5a/98/4e5a980d8fe546ed0613a58427e02113.jpg",
+        "sizes": {
+            "24x20": 100,
+            "36x24": 150,
+            "48x36": 200
+        },
+        "keyWords": ["Vijay", "Thalapathy", "Actor", "Poster", "Movies"],
+        "images": [
+            "/Images/VijayExample/LeoVijay.png",
+            "/Images/VijayExample/example1.png",
+            "/Images/VijayExample/example2.png"
+        ],
+        "imageLocation": "/Images/VijayExample"
+    }
+
+}
