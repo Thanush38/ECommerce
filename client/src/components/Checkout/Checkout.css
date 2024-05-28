@@ -1,0 +1,5 @@
+.checkoutWrapper{
+    display: flex;
+    height: 100vh;
+    gap: 10vw;
+}

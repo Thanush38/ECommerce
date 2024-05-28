@@ -54,21 +54,21 @@ const ProductPage = () => {
     }, [dispatch]);
 
     // Add item to cart
-    const handleAddItem = (item: Product) => {
-        dispatch(addItem(item));
-        localStorage.setItem('cart', JSON.stringify([...cart, item]));
-    };
+    // const handleAddItem = (item: Product) => {
+    //     dispatch(addItem(item));
+    //     localStorage.setItem('cart', JSON.stringify([...cart, item]));
+    // };
 
-    const handleRemoveItem = (id: number) => {
-        dispatch(removeItem(id));
-        const updatedCart = cart.filter(item => item.id !== id);
-        localStorage.setItem('cart', JSON.stringify(updatedCart));
-    };
-
-    const handleClearCart = () => {
-        dispatch(clearCart());
-        localStorage.removeItem('cart');
-    };
+    // const handleRemoveItem = (id: number) => {
+    //     dispatch(removeItem(id));
+    //     const updatedCart = cart.filter(item => item.id !== id);
+    //     localStorage.setItem('cart', JSON.stringify(updatedCart));
+    // };
+    //
+    // const handleClearCart = () => {
+    //     dispatch(clearCart());
+    //     localStorage.removeItem('cart');
+    // };
 
 
     useEffect(() => {
@@ -113,7 +113,7 @@ const ProductPage = () => {
 
     const getHTML = products?.map((product: Product) => {
 
-        return <div className={"singleProducts"}><ProductCard key={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} cartFunc={()=>handleAddItem(product)}/></div>;
+        return <div className={"singleProducts"}><ProductCard key={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} /></div>;
     });
 
     return (

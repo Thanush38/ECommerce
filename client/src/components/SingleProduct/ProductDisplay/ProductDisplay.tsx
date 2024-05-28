@@ -3,6 +3,7 @@ import './ProductDisplay.css';
 import { Slide } from 'react-slideshow-image';
 import ImageSlider from "./ImageSlider/ImageSlider";
 import {useDispatch} from "react-redux";
+import {setCart} from "../../../store/Cart";
 
 interface Product {
     id: number;
@@ -53,7 +54,7 @@ const ProductDisplay = (props : Product) => {
                 if (cartData[i].id === props.id && cartData[i].size === size) {
                     cartData[i].quantity += 1;
                     found = true;
-                    dispatch({type: "ADD_TO_CART", payload: cartData});
+                    dispatch(setCart((cartData)));
                     break;
                 }
             }
@@ -61,24 +62,26 @@ const ProductDisplay = (props : Product) => {
                 let data = {
                     id: props.id,
                     name: props.name,
-                    price: price,
+                    price: props.price,
                     size: size,
-                    quantity: 1
+                    quantity: 1,
+                    image: props.imageCode[0]
                 }
                 cartData.push(data);
-                dispatch({type: "ADD_TO_CART", payload: cartData})
+                dispatch(setCart((cartData)))
             }
             localStorage.setItem("cart", JSON.stringify(cartData));
         }else {
             let data = {
                 id: props.id,
                 name: props.name,
-                price: price,
+                price: props.price,
                 size: size,
-                quantity: 1
+                quantity: 1,
+                image: props.imageCode[0]
             }
             localStorage.setItem("cart", "[" + JSON.stringify(data) + "]");
-            dispatch({type: "ADD_TO_CART", payload: [data]});
+            dispatch(setCart([data]));
         }
 
     }

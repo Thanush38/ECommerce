@@ -6,10 +6,12 @@ interface CartItem {
     name: string;
     image: string;
     price: string;
-    sizes: {[key: string]: number};
-    keyWords: string[];
+    size: string,
+    quantity: number;
 
 }
+
+
 
 interface CartState {
     items: CartItem[];

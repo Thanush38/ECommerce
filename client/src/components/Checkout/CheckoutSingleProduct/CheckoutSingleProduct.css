@@ -1,0 +1,132 @@
+.checkout-single-product{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    padding: 10px;
+    width: 40vw;
+    background: #5c6370;
+    border-radius: 5px;
+}
+
+.checkoutImageContainer{
+    padding-left: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.checkout-single-product-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.checkout-single-product-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.CheckoutProductIncrement{
+    background: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.CheckoutProductIncrement:hover{
+    background: #3700b3;
+}
+.checkoutProductPriceBTN {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.CheckoutProductInput {
+    width: 50px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+    background: #fff;
+    margin: 0 5px;
+}
+
+.checkoutNoselect {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+}
+
+.checkoutNoselect, .checkoutNoselect span {
+    transition: 200ms;
+}
+
+.checkoutNoselect .checkoutDeleteText {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.checkoutNoselect .checkoutDeleteIcon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutNoselect svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.checkoutNoselect:hover {
+    background: #ff3636;
+}
+
+.checkoutNoselect:hover .checkoutDeleteText {
+    color: transparent;
+}
+
+.checkoutNoselect:hover .checkoutDeleteIcon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.checkoutNoselect:focus {
+    outline: none;
+}
+
+.checkoutNoselect:active .checkoutDeleteIcon svg {
+    transform: scale(0.8);
+}
+

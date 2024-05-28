@@ -52,10 +52,10 @@ const LoggedShow = (props: LoggedShowProps) => {
         };
     }, [dispatch]);
 
-    const handleAddItem = (item: Product) => {
-        dispatch(addItem(item));
-        localStorage.setItem('cart', JSON.stringify([...cart, item]));
-    };
+    // const handleAddItem = (item: Product) => {
+    //     dispatch(addItem(item));
+    //     localStorage.setItem('cart', JSON.stringify([...cart, item]));
+    // };
 
     const handleRemoveItem = (id: number) => {
         dispatch(removeItem(id));
@@ -76,7 +76,6 @@ const LoggedShow = (props: LoggedShowProps) => {
             let count = 0;
             if (cart) {
                 const parsedCart = JSON.parse(cart);
-                console.log("parsedCart", parsedCart);
                 setCurrentCart(parsedCart);
 
                 parsedCart.forEach((item: any) => {
@@ -132,7 +131,7 @@ const LoggedShow = (props: LoggedShowProps) => {
                 </div>
                 <div className="notice-content">
                     <div className="username">{props.email}</div>
-                    <div className="lable-message">Thanush<span className="number-message">{cart.length}</span></div>
+                    <div className="lable-message">Thanush<span className="number-message">{cartNumber}</span></div>
                     <div className={"noticeLength"}>
                     <div className="user-id" onClick={props.logOut}>Log Out</div>
                     <div className="user-id"onClick={handleCheckout}>Checkout</div>
