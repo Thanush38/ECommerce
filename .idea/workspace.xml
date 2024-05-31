@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Checkout/CheckoutSingleProduct/CheckoutSingleProduct.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Checkout/CheckoutSingleProduct/CheckoutSingleProduct.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct 2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct 2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/reusable/Loader/Loader 2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/reusable/Loader/Loader 2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/images/Text 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer 2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/ImageReader 2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/Images/ItemsCopy 2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/LeoVijay 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example1 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example2 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/Items/ImplementVijay 2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/hidden/.gitignore" beforeDir="false" />
-    </list>
+    <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
