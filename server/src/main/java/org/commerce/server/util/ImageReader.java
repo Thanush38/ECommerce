@@ -77,7 +77,8 @@ public class ImageReader {
     // to add the base 64 images to the json object
     public String addImages(String data){
         JSONObject obj = new JSONObject(data);
-        obj = obj.getJSONObject("items");
+        obj = obj.getJSONArray("items").getJSONObject(0);
+
         String directory = obj.getString("imageLocation");
 
         JSONArray files = obj.getJSONArray("images");

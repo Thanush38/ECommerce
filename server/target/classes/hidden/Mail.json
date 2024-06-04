@@ -1,0 +1,18 @@
+{"data": {  "host": "live.smtp.mailtrap.io",
+  "port": 587,
+  "ssl": false,
+  "tls": true,
+  "user": "api",
+  "password" : "78b3b93f8bff8e027255b8b8af57ad0f",
+  "to": "shadowposters@gmail.com"
+},
+  "test": {
+    "host": "bulk.api.mailtrap.io",
+    "port": 25,
+    "ssl": false,
+    "tls": true,
+    "user": "9b87e129e4e55f",
+    "password" : "c0ae8c6c33a1fa",
+    "to": "shadowposters@gmail.com"
+  }
+}

@@ -27,6 +27,31 @@ const LoggedShow = (props: LoggedShowProps) => {
     const dispatch = useDispatch();
     const cart = useSelector((state: RootState) => state.cart.items);
 
+    // useEffect(() => {
+    //     const fetchCart = () => {
+    //         const cart = localStorage.getItem("cart");
+    //         if (cart) {
+    //             dispatch(setCart(JSON.parse(cart)));
+    //         } else {
+    //             dispatch(setCart([]));
+    //         }
+    //     };
+    //
+    //     fetchCart();
+    //
+    //     const handleStorageChange = (event: StorageEvent) => {
+    //         if (event.key === "cart") {
+    //             fetchCart();
+    //         }
+    //     };
+    //
+    //     window.addEventListener('storage', handleStorageChange);
+    //
+    //     return () => {
+    //         window.removeEventListener('storage', handleStorageChange);
+    //     };
+    // }, [dispatch]);
+
     useEffect(() => {
         const fetchCart = () => {
             const cart = localStorage.getItem("cart");
@@ -37,8 +62,6 @@ const LoggedShow = (props: LoggedShowProps) => {
             }
         };
 
-        fetchCart();
-
         const handleStorageChange = (event: StorageEvent) => {
             if (event.key === "cart") {
                 fetchCart();
@@ -47,10 +70,20 @@ const LoggedShow = (props: LoggedShowProps) => {
 
         window.addEventListener('storage', handleStorageChange);
 
+        fetchCart();
+
         return () => {
             window.removeEventListener('storage', handleStorageChange);
         };
     }, [dispatch]);
+
+    useEffect(() => {
+        let count = 0;
+        cart.forEach((item: any) => {
+            count += item.quantity;
+        });
+        setCartNumber(count);
+    }, [cart]);
 
     // const handleAddItem = (item: Product) => {
     //     dispatch(addItem(item));
@@ -70,31 +103,31 @@ const LoggedShow = (props: LoggedShowProps) => {
 
 
 
-    useEffect(() => {
-        const handleStorage = () => {
-            const cart = localStorage.getItem("cart");
-            let count = 0;
-            if (cart) {
-                const parsedCart = JSON.parse(cart);
-                setCurrentCart(parsedCart);
-
-                parsedCart.forEach((item: any) => {
-                    count += item.quantity;
-                });
-                setCartNumber(count);
-            } else {
-                setCurrentCart([]);
-                setCartNumber(0);
-            }
-        };
-
-        window.addEventListener('storage', handleStorage);
-        handleStorage(); // Fetch cart data initially when component mounts
-
-        return () => {
-            window.removeEventListener('storage', handleStorage);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const handleStorage = () => {
+    //         const cart = localStorage.getItem("cart");
+    //         let count = 0;
+    //         if (cart) {
+    //             const parsedCart = JSON.parse(cart);
+    //             setCurrentCart(parsedCart);
+    //
+    //             parsedCart.forEach((item: any) => {
+    //                 count += item.quantity;
+    //             });
+    //             setCartNumber(count);
+    //         } else {
+    //             setCurrentCart([]);
+    //             setCartNumber(0);
+    //         }
+    //     };
+    //
+    //     window.addEventListener('storage', handleStorage);
+    //     handleStorage(); // Fetch cart data initially when component mounts
+    //
+    //     return () => {
+    //         window.removeEventListener('storage', handleStorage);
+    //     };
+    // }, [cart]);
 
     const handleCheckout = () => {
         navigate('/checkout');

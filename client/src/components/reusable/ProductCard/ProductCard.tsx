@@ -33,27 +33,29 @@ const ImageContainer: React.FC<ImageProps> = ({image, children}) => {
 };
 
 type ProductCardProps = {
+    id: string,
     image: string,
     title: string,
     sizes: {
-        [key: string]: number
+        [key: string]: Size
     },
-    price: string,
+    price: number,
     func?: () => void
     cartFunc?: () => void
 };
 
-type size = {
-    size: {
-        [key: string]: number
-    };
+type Size = {
+    price: number;
+    quantity: number;
+    sizeId: number;
+
 }
 const ProductCard = (props: ProductCardProps) => {
     const [price, setPrice] = React.useState<string>("Choose Size");
 
-    const priceClickHandler = (givenPrice: number) => {
-        let stringNumber: string = givenPrice.toString();
-        setPrice("Price: $" + stringNumber);
+    const priceClickHandler = (data: Size) => {
+        let stringNumber: string = data.price.toFixed(2);
+        setPrice("$" + stringNumber);
     }
 
     const getSizes = () => {
@@ -77,7 +79,7 @@ const ProductCard = (props: ProductCardProps) => {
     //
     const handleProductClick = () => {
         console.log("Product Clicked")
-        navigate("/product");
+        navigate("/product/"+props.id);
     }
 
 

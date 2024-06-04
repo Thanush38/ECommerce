@@ -18,7 +18,7 @@ const Cards: React.FC<Props> = (props) => {
                     <div className="content-box">
                         <span className="card-title">{props.title}</span>
                         <p className="card-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            {props.content}
                         </p>
                         <span className="see-more" onClick={handleClick}>Browse</span>
                     </div>

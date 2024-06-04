@@ -5,12 +5,19 @@ import Footer from "../Footer/Footer";
 import ProductDisplay from "./ProductDisplay/ProductDisplay";
 import Loader from "../reusable/Loader/Loader";
 import axios from 'axios';
+import {useParams} from 'react-router-dom';
+
+type Size = {
+    price: number;
+    quantity: number;
+    sizeId: number;
+};
 interface Product {
     id: number;
     name: string;
     image: string;
     price: string;
-    sizes: {[key: string]: number};
+    sizes: { [key: string]: Size };
     keyWords: string[];
     description: string;
     images: string[];
@@ -22,6 +29,7 @@ const SingleProduct = () => {
 
     const [singleProduct, setSingleProduct] = useState<Product | null>(null);
     const [dataLoaded, setDataLoaded] = useState<boolean>(false);
+    let {id} = useParams();
     // useEffect(() => {
     //     const url: string = 'http://localhost:8080/server-1.0-SNAPSHOT/api/contents/product'
     //     const fetchProducts = async () => {
@@ -46,10 +54,10 @@ const SingleProduct = () => {
     // }, []);
 
     useEffect(() => {
-        const url: string = 'http://localhost:8080/server-1.0-SNAPSHOT/api/contents/product';
+        const url: string = 'http://localhost:8080/server-1.0-SNAPSHOT/api/contents/product/' + id;
         axios.get(url).then((response) => {
 
-            console.log(response.data);
+
             setSingleProduct(response.data);
             setDataLoaded(true);
         }).catch((error) => {
@@ -79,7 +87,7 @@ const SingleProduct = () => {
             <div className="singleProductContainer">
                 {dataLoaded ? (
                     singleProduct ?  (
-                        <ProductDisplay
+                        <div key={singleProduct.id}><ProductDisplay
                             id={singleProduct.id}
                             key={singleProduct.id}
                             name={singleProduct.name}
@@ -90,7 +98,7 @@ const SingleProduct = () => {
                             keyWords={singleProduct.keyWords}
                             images={singleProduct.images}
                             imageCode={singleProduct.imageCode}
-                        />
+                        /></div>
                     ) : (
                         <p>No product found.</p>
                     )

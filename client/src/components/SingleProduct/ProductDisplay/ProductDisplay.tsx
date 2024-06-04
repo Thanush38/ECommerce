@@ -3,14 +3,19 @@ import './ProductDisplay.css';
 import { Slide } from 'react-slideshow-image';
 import ImageSlider from "./ImageSlider/ImageSlider";
 import {useDispatch} from "react-redux";
-import {setCart} from "../../../store/Cart";
+import cart, {setCart} from "../../../store/Cart";
+type Size = {
+    price: number;
+    quantity: number;
+    sizeId: number;
+};
 
 interface Product {
     id: number;
     name: string;
     image: string;
     price: string;
-    sizes: {[key: string]: number};
+    sizes: { [key: string]: Size };
     keyWords: string[];
     description: string;
     images: string[];
@@ -19,23 +24,37 @@ interface Product {
 }
 
 const ProductDisplay = (props : Product) => {
-    const [imageString, setImageString] = React.useState<string>("");
     const [price, setPrice] = React.useState<string>("Select Size");
     const [size, setSize] = React.useState<string>("");
     const dispatch = useDispatch();
 
 
     const setPriceFunction = (size: string) => {
-        setPrice("$" + props.sizes[size]);
+        setPrice("$" + props.sizes[size].price);
         setSize(size);
     }
 
     const getButtons = () => {
         let buttons = [];
         for (let key in props.sizes) {
-            buttons.push(<div className={"productButtonContainer"}><button className={"productButton"} onClick={() => setPriceFunction(key)}>{key}</button></div>);
+            buttons.push(<div className={"productButtonContainer"} key={props.sizes[key].sizeId + "1"}><button className={"productButton"} onClick={() => setPriceFunction(key)}>{key}</button></div>);
         }
         return buttons;
+    }
+
+    const verifyIDs = (cartData: any, item:Product) => {
+        let found = false;
+        for (let i = 0; i < cartData.length; i++) {
+                console.log(cartData[i].id, item.id, cartData[i].size)
+                if (cartData[i].id === item.sizes[size].sizeId) {
+                    found = true;
+                    cartData[i].quantity += 1;
+                    break;
+
+            }
+        }
+        return found;
+
     }
 
 
@@ -49,23 +68,16 @@ const ProductDisplay = (props : Product) => {
 
         if(cart) {
             let cartData = JSON.parse(cart);
-            let found = false;
-            for (let i = 0; i < cartData.length; i++) {
-                if (cartData[i].id === props.id && cartData[i].size === size) {
-                    cartData[i].quantity += 1;
-                    found = true;
-                    dispatch(setCart((cartData)));
-                    break;
-                }
-            }
+            let found = verifyIDs(cartData, props);
+            console.log(found)
             if (!found) {
                 let data = {
-                    id: props.id,
+                    id: props.sizes[size].sizeId,
                     name: props.name,
                     price: props.price,
                     size: size,
                     quantity: 1,
-                    image: props.imageCode[0]
+                    image: props.image
                 }
                 cartData.push(data);
                 dispatch(setCart((cartData)))
@@ -73,12 +85,12 @@ const ProductDisplay = (props : Product) => {
             localStorage.setItem("cart", JSON.stringify(cartData));
         }else {
             let data = {
-                id: props.id,
+                id: props.sizes[size].sizeId,
                 name: props.name,
                 price: props.price,
                 size: size,
                 quantity: 1,
-                image: props.imageCode[0]
+                image: props.image
             }
             localStorage.setItem("cart", "[" + JSON.stringify(data) + "]");
             dispatch(setCart([data]));
@@ -88,7 +100,7 @@ const ProductDisplay = (props : Product) => {
     return (
         <div>
             <div className="singleProductContent">
-                <div className={"productImageContainer"}>
+                <div className={"productImageContainer"} key={props.id}>
                     <ImageSlider images={props.imageCode}/>
                     {/*{getImage()}*/}
                 </div>

@@ -73,7 +73,7 @@ const Sections = () => {
         } else if(i===5){
             return (
                 <div className="box-container">
-                    <p className="middleText">Multiple  <span className="fancy">categories</span></p>
+                    <p className="middleText">Variety of  <span className="fancy">Choices</span></p>
                 </div>
             )
         } else if (i ===6){

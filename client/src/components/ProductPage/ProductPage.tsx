@@ -8,16 +8,27 @@ import ImageViewer from "../reusable/ImageViewer/ImageViewer";
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/Store';
 import { setCart, addItem, removeItem, clearCart } from '../../store/Cart';
-interface Product {
-    id: number;
+
+
+
+type Size = {
+    price: number;
+    quantity: number;
+    sizeId: number;
+};
+
+type Product = {
+    id: string;
     name: string;
+    price: number;
+    quantity: number;
+    description: string;
     image: string;
-    price: string;
-    sizes: {[key: string]: number};
+    sizes: { [key: string]: Size };
     keyWords: string[];
     images: string[];
-
-}
+    imageLocation: string;
+};
 const ProductPage = () => {
 
     const [products, setProducts] = useState<Product[] | null>(null);
@@ -94,7 +105,8 @@ const ProductPage = () => {
             }
             const response:Response = await fetch(url);
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
+            // console.log(data.items[0])
             return data.items;
         } catch (error) {
             console.log(error);
@@ -111,9 +123,11 @@ const ProductPage = () => {
     }
 
 
-    const getHTML = products?.map((product: Product) => {
+    const getHTML = products?.map((outerProduct: Product) => {
+        console.log("outerProduo", outerProduct);
+        let product = outerProduct;
 
-        return <div className={"singleProducts"}><ProductCard key={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} /></div>;
+        return <div className={"singleProducts"} key={product.id}><ProductCard id={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} /></div>;
     });
 
     return (

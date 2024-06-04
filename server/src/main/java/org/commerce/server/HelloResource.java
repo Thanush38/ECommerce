@@ -25,14 +25,14 @@ public class HelloResource {
 //        String data =  reader.readFileContents("Items/ItemsPractice.json");
 
 
-        return reader.readFileContents("Items/ItemsPractice.json");
+        return reader.readFileContents("Items/Development.json");
 
     }
 
     @GET
-    @Path("/product")
-    public String getProduct() {
-        String data = reader.readFileContents("Items/ImplementVijay.json");
+    @Path("/product/{id}")
+    public String getProduct(@PathParam("id") String id) {
+        String data = reader.readFileContents("Items/Development.json", id);
 //
         String retData = imageReader.addImages(data);
         return retData;
