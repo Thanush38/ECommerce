@@ -66,4 +66,19 @@ public class HelloResource {
     }
 
 
+    @POST
+    @Path("/shipping")
+    @Produces("application/json")
+    @Consumes("application/json")
+    public Response shipping(String data) {
+        String ret = reader.calculateShipping(data);
+        return Response.status(200) // return the precision value as a response object
+                .header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, HEAD")
+                .header("Access-Control-Allow-Headers", "Content-Type")
+                .header("Content-Type", "application/json")
+                .entity(ret)
+                .build();
+    }
+
+
 }

@@ -15,8 +15,8 @@ const NavBar: React.FC<NavBarProps> = (props) => {
     <div className="navbarContainer">
       <div className="navbar">
         <div className="navbarLeft">
-            <a href="/" className={`navbarLink ${props.active === 'home' ? 'active' : ''}`}>Home</a>
-            <a href="/products" className={`navbarLink ${props.active === 'products' ? 'active' : ''}`}>Products</a>
+            <a href="/" className={`menu__link ${props.active === 'home' ? 'active' : ''}`}>Home</a>
+            <a href="/products" className={`menu__link ${props.active === 'products' ? 'active' : ''}`}>Products</a>
         </div>
         <div className="navbarTitle">
             <img src={logoText} alt="Shadow Posters" className="navbarLogo" />

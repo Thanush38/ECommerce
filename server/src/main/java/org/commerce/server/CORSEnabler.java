@@ -38,7 +38,7 @@ public class CORSEnabler implements ContainerResponseFilter {
 //        System.out.println(makeRawHTTP(requestContext));
 //        System.out.println(makeRawHTTP(responseContext));
 
-        headers.add("Access-Control-Allow-Origin", "*");
+        headers.add("Access-Control-Allow-Origin", "http://localhost:3000");
         headers.add("Access-Control-Allow-Headers", "Authorization, Origin, X-Requested-With, Content-Type");
         headers.add("Access-Control-Expose-Headers", "Location, Content-Disposition");
         headers.add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");

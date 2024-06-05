@@ -102,6 +102,15 @@ public class ProductReader {
         return filtered.toString();
     }
 
+    public String calculateShipping(String data) {
+        JSONObject obj = new JSONObject(data);
+        //Find out how to calculate shipping
+
+
+        obj.put("shipping", 30);
+        return obj.toString();
+    }
+
 
 
 }

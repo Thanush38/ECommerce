@@ -24,6 +24,9 @@ const Checkout = () => {
         foundShipping: false,
         total: 0
     });
+    const [Address, setAddress] = useState<string>('');
+    const [City, setCity] = useState<string>('');
+    const [PostalCode, setPostalCode] = useState<string>('');
 
     useEffect(() => {
         const fetchCart = () => {
@@ -92,11 +95,11 @@ const Checkout = () => {
         dispatch(setCart((cartData)));
     }
 
-    const calculateEverything = (parsedCart: any) => {
+    const calculateEverything = async (parsedCart: any) => {
         console.log("calculate everythin", currentCart);
         let total = getSubTotal(parsedCart);
         let tax = getTax(total);
-        let shipping = getShipping(pricing.foundShipping);
+        let shipping = await getShipping(pricing.foundShipping);
         let totalCost = total + tax + shipping;
         setPricing({
             ...pricing,
@@ -123,12 +126,27 @@ const Checkout = () => {
 
     }
 
-    const getShipping = (shippingFound:boolean) => {
-        if(shippingFound) {
-            return 25
-        } else {
+    const getShipping = async (shippingFound:boolean) => {
+        if(Address === '' || City === '' || PostalCode === '') {
             return 0;
         }
+        const data = {
+            address: Address,
+            city: City,
+            postalCode: PostalCode
+        }
+        const response = await fetch('http://localhost:8080/server-1.0-SNAPSHOT/api/contents/shipping', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        const responseData = await response.json();
+        console.log(responseData);
+        let shipping:number = responseData.shipping;
+        return shipping;
+
     }
 
     const getTotal = (parsedCart:any) => {
@@ -250,12 +268,12 @@ const Checkout = () => {
                         <div className='credit-info-content'>
                             <div className={"AddressInfo"}>
                                 <h2>Enter Shipping Address to Find Cost</h2>
-                                <input className={"input-field"} placeholder={"Enter Address"}/>
+                                <input className={"input-field"} placeholder={"Enter Address"} onChange={(e) => setAddress(e.target.value)}/>
                                 <div className="flex flex-row gap-1.5">
-                                    <input className={"input-field"} placeholder={"Enter City"}/>
-                                    <input className={"input-field"} placeholder={"Enter Postal Code"}/>
+                                    <input className={"input-field"} placeholder={"Enter City"} onChange={(e) => setCity(e.target.value)}/>
+                                    <input className={"input-field"} placeholder={"Enter Postal Code"} onChange={(e) => setPostalCode(e.target.value)}/>
                                 </div>
-                                <button className={"FindCostBTN"} onClick={foundShipping}>Find Cost</button>
+                                <button className={"FindCostBTN"} onClick={() =>calculateEverything(currentCart)}>Find Cost</button>
 
                             </div>
                             <table className='half-input-table'>

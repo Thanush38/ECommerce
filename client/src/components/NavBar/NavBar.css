@@ -27,16 +27,30 @@
     align-items: center;
     justify-content: space-around;
   }
-  
-  .navbarLink {
-    color: #fff; /* Text color of the navbar links */
-    margin-right: 20px; /* Spacing between navbar links */
-    text-decoration: none; /* Remove underline from navbar links */
-  }
-  
-  .navbarLink:hover {
-    text-decoration: underline; /* Underline effect on hover */
-  }
+
+.menu__link {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -.25rem;
+  right: 0;
+  transition: right .4s, width .4s, left .4s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
   
   .navbarCart {
     color: #fff; /* Text color of the cart */
@@ -45,3 +59,14 @@
   .active {
     color: #77d2f7; /* Text color of the active link */
   }
+
+  .navbarLeft {
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+  }
+
+
+
