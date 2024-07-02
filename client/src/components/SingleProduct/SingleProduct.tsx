@@ -17,7 +17,7 @@ interface Product {
     id: number;
     name: string;
     image: string;
-    price: string;
+    price: number;
     sizes: { [key: string]: Size };
     keyWords: string[];
     description: string;

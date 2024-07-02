@@ -66,7 +66,7 @@ interface Product {
     id: number;
     name: string;
     image: string;
-    price: string;
+    price: number;
     size: string;
     quantity: number;
 }

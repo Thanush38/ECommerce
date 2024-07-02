@@ -20,7 +20,7 @@ interface cartItem {
 interface smallProduct {
     id: number;
     name: string;
-    price: string;
+    price: number;
     size: string;
     quantity: number;
     image: string;
@@ -29,7 +29,7 @@ interface Product {
     id: number;
     name: string;
     image: string;
-    price: string;
+    price: number;
     sizes: { [key: string]: Size };
     keyWords: string[];
     description: string;
@@ -74,6 +74,7 @@ const ProductDisplay = (props : Product) => {
 
 
     const addToCart = () => {
+        console.log(size)
         if (!auth.currentUser) {
             alert("Please sign in to add to cart");
             return;
@@ -114,10 +115,11 @@ const ProductDisplay = (props : Product) => {
                 localStorage.setItem("cart", JSON.stringify(cartData));
             }else {
                 let cartData:cartItem = JSON.parse(cart);
+
                 let data = {
                     id: props.sizes[size].sizeId,
                     name: props.name,
-                    price: price,
+                    price: props.sizes[size].price,
                     size: size,
                     quantity: 1,
                     image: props.image
@@ -127,6 +129,22 @@ const ProductDisplay = (props : Product) => {
                 localStorage.setItem("cart", JSON.stringify(cartData));
                 dispatch(setCart((cartData)))
             }
+        } else {
+            let cartData:cartItem = {
+                id: userID,
+                items: []
+            }
+            let data  = {
+                id: props.sizes[size].sizeId,
+                name: props.name,
+                price: props.sizes[size].price,
+                size: size,
+                quantity: 1,
+                image: props.image
+            }
+            cartData.items.push(data);
+            localStorage.setItem("cart", JSON.stringify(cartData));
+            dispatch(setCart((cartData)))
         }
 
     }
