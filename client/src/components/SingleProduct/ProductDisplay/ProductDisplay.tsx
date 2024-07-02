@@ -4,12 +4,27 @@ import { Slide } from 'react-slideshow-image';
 import ImageSlider from "./ImageSlider/ImageSlider";
 import {useDispatch} from "react-redux";
 import cart, {setCart} from "../../../store/Cart";
+import {auth} from "../../../firebase";
+
 type Size = {
     price: number;
     quantity: number;
     sizeId: number;
 };
+interface cartItem {
+    id: string;
+    items: smallProduct[];
 
+}
+
+interface smallProduct {
+    id: number;
+    name: string;
+    price: string;
+    size: string;
+    quantity: number;
+    image: string;
+}
 interface Product {
     id: number;
     name: string;
@@ -59,7 +74,12 @@ const ProductDisplay = (props : Product) => {
 
 
     const addToCart = () => {
-        console.log("Added to Cart");
+        if (!auth.currentUser) {
+            alert("Please sign in to add to cart");
+            return;
+        }
+        let userID = auth.currentUser.uid;
+
         let cart = localStorage.getItem("cart");
         if(size === "") {
             alert("Please select a size");
@@ -67,33 +87,46 @@ const ProductDisplay = (props : Product) => {
         }
 
         if(cart) {
+            // console.log(cart)
             let cartData = JSON.parse(cart);
-            let found = verifyIDs(cartData, props);
-            console.log(found)
-            if (!found) {
+
+            if(cartData.id!==userID) {
+                cartData = {
+                    id: userID,
+                    items: []
+                }
+                let found :boolean = verifyIDs(cartData, props);
+                console.log("found", found)
+                if (!found) {
+                    let data = {
+                        id: props.sizes[size].sizeId,
+                        name: props.name,
+                        price: price,
+                        size: size,
+                        quantity: 1,
+                        image: props.image
+                    }
+                    console.log("cart before", cartData.items)
+                    cartData.items.push(data);
+                    console.log("cartData", cartData.items)
+                    dispatch(setCart((cartData)))
+                }
+                localStorage.setItem("cart", JSON.stringify(cartData));
+            }else {
+                let cartData:cartItem = JSON.parse(cart);
                 let data = {
                     id: props.sizes[size].sizeId,
                     name: props.name,
-                    price: props.price,
+                    price: price,
                     size: size,
                     quantity: 1,
                     image: props.image
                 }
-                cartData.push(data);
+                cartData.items.push(data);
+
+                localStorage.setItem("cart", JSON.stringify(cartData));
                 dispatch(setCart((cartData)))
             }
-            localStorage.setItem("cart", JSON.stringify(cartData));
-        }else {
-            let data = {
-                id: props.sizes[size].sizeId,
-                name: props.name,
-                price: props.price,
-                size: size,
-                quantity: 1,
-                image: props.image
-            }
-            localStorage.setItem("cart", "[" + JSON.stringify(data) + "]");
-            dispatch(setCart([data]));
         }
 
     }
@@ -112,9 +145,9 @@ const ProductDisplay = (props : Product) => {
                                       <div className={"productButtons"}>
                                           {getButtons()}
                                       </div>
-                                      <h2>Price: {price}</h2>
+                                      <h2 className={"priceP"}>Price: {price}</h2>
                                   </div>
-                                  <p>{props.description}</p>
+                                  <p className={"descriptionP"}>{props.description}</p>
                                   <button className="CartBtn" onClick={addToCart}>
                 <span className="IconContainer">
                   <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" className="cart"><path

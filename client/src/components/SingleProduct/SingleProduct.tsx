@@ -6,6 +6,7 @@ import ProductDisplay from "./ProductDisplay/ProductDisplay";
 import Loader from "../reusable/Loader/Loader";
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
+import {apiGet} from "../../Api";
 
 type Size = {
     price: number;
@@ -30,56 +31,20 @@ const SingleProduct = () => {
     const [singleProduct, setSingleProduct] = useState<Product | null>(null);
     const [dataLoaded, setDataLoaded] = useState<boolean>(false);
     let {id} = useParams();
-    // useEffect(() => {
-    //     const url: string = 'http://localhost:8080/server-1.0-SNAPSHOT/api/contents/product'
-    //     const fetchProducts = async () => {
-    //         try {
-    //             const response: Response = await fetch(url);
-    //             const data = await response.json();
-    //             console.log(data.items);
-    //             // setSingleProducts(data.items);
-    //             // singleProducts = data.items;
-    //             setSingleProducts(data.items);
-    //             if(singleProduct != null){
-    //                 setDataLoaded(true);
-    //             }
-    //
-    //             console.log(singleProduct)
-    //         } catch (error) {
-    //             console.log(error);
-    //         }
-    //     };
-    //     fetchProducts();
-    //
-    // }, []);
+
 
     useEffect(() => {
-        const url: string = 'http://localhost:8080/server-1.0-SNAPSHOT/api/contents/product/' + id;
-        axios.get(url).then((response) => {
+        const url: string = '/contents/product/' + id;
+            apiGet(url).then((response) => {
+                setSingleProduct(response.data);
+                setDataLoaded(true);
+            }).catch((error) => {
+                console.log(error);
+            });
 
-
-            setSingleProduct(response.data);
-            setDataLoaded(true);
-        }).catch((error) => {
-            console.log(error);
-        })
 
     }, []);
 
-
-    // const getHTML = () => {
-    //     if (singleProducts != null) {
-    //         console.log("showing data");
-    //         return <ProductDisplay id={singleProducts.id} key={singleProducts.id} name={singleProducts.name} image={singleProducts.image}
-    //                                price={singleProducts.price} description={singleProducts.description}
-    //                                sizes={singleProducts.sizes} keyWords={singleProducts.keyWords}
-    //                                images={singleProducts.images}/>;
-    //     }
-    //     console.log(singleProducts);
-    //
-    //
-    //
-    // }
 
     return (
         <div>

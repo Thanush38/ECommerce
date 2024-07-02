@@ -10,6 +10,13 @@ type LoggedShowProps = {
     email: string;
     logOut: () => void;
     image: string;
+    name: string;
+}
+interface cartItem {
+    id:string;
+    items: Product[];
+
+
 }
 interface Product {
     id: number;
@@ -18,14 +25,15 @@ interface Product {
     price: string;
     sizes: {[key: string]: number};
     keyWords: string[];
-
 }
+
 const LoggedShow = (props: LoggedShowProps) => {
     const[currentCart, setCurrentCart] = useState<JSON[]>([]);
     const [cartNumber, setCartNumber] = useState<number>(0);
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const cart = useSelector((state: RootState) => state.cart.items);
+    const cart = useSelector((state: RootState) => state.cart.cartItem);
+
 
     // useEffect(() => {
     //     const fetchCart = () => {
@@ -58,7 +66,7 @@ const LoggedShow = (props: LoggedShowProps) => {
             if (cart) {
                 dispatch(setCart(JSON.parse(cart)));
             } else {
-                dispatch(setCart([]));
+                // dispatch(setCart([]));
             }
         };
 
@@ -79,7 +87,7 @@ const LoggedShow = (props: LoggedShowProps) => {
 
     useEffect(() => {
         let count = 0;
-        cart.forEach((item: any) => {
+        cart.items.forEach((item: any) => {
             count += item.quantity;
         });
         setCartNumber(count);
@@ -90,11 +98,7 @@ const LoggedShow = (props: LoggedShowProps) => {
     //     localStorage.setItem('cart', JSON.stringify([...cart, item]));
     // };
 
-    const handleRemoveItem = (id: number) => {
-        dispatch(removeItem(id));
-        const updatedCart = cart.filter(item => item.id !== id);
-        localStorage.setItem('cart', JSON.stringify(updatedCart));
-    };
+
 
     const handleClearCart = () => {
         dispatch(clearCart());
@@ -164,7 +168,7 @@ const LoggedShow = (props: LoggedShowProps) => {
                 </div>
                 <div className="notice-content">
                     <div className="username">{props.email}</div>
-                    <div className="lable-message">Thanush<span className="number-message">{cartNumber}</span></div>
+                    <div className="lable-message">{props.name}<span className="number-message">{cartNumber}</span></div>
                     <div className={"noticeLength"}>
                     <div className="user-id" onClick={props.logOut}>Log Out</div>
                     <div className="user-id"onClick={handleCheckout}>Checkout</div>

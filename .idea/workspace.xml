@@ -5,18 +5,354 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/ProductReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/ProductReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/ProductReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/ProductReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/ProductReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/ProductReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/PopUp/PopUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/PopUp/PopUp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/PopUp/popUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/PopUp/popUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ImageSlider/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ImageSlider/ImageSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/esm/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/esm/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/esm/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/esm/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics-compat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm2017.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/esm/index.esm2017.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/index.cjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/dist/index.cjs.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/analytics/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/analytics/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/esm/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/esm/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/esm/index.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/esm/index.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.lite.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.lite.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/dist/index.lite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app-compat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app-compat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app/dist/esm/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app/dist/esm/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app/dist/esm/index.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app/dist/esm/index.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/esm/index.node.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/esm/index.node.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/firebase-auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/firebase-auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/firebase-auth.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/firebase-auth.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.node.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/dist/index.node.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth-compat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/cordova/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/cordova/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/index-8d9a3b36.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/index-8d9a3b36.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/browser-cjs/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/popup_redirect-8d08f578.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/popup_redirect-8d08f578.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index-d0d29856.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index-d0d29856.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index-809f5560.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index-809f5560.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/index.webworker.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/index.webworker.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/totp-d821ac28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/totp-d821ac28.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/totp-a01f3fd9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/totp-a01f3fd9.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/index-83c4f625.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/index-83c4f625.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/register-b68bd963.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-cjs/register-b68bd963.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/register-3e794fda.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/web-extension-esm2017/register-3e794fda.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/auth/web-extension/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/web-extension/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.node.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.node.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.rn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/index.rn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/node-esm/index.node.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/dist/node-esm/index.node.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore-compat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.cjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.cjs.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm2017.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm2017.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.esm5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.cjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.cjs.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.mjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.node.mjs.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.rn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.rn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.rn.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/index.rn.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.browser.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.browser.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.browser.esm5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.browser.esm5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.node.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.node.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.node.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.node.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.rn.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/lite/index.rn.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/firestore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/dist/esm/index.esm2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/dist/esm/index.esm2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@firebase/vertexai-preview/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/admin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/admin.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/backoff-timeout.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/backoff-timeout.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call-credentials.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call-credentials.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call-interface.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call-interface.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel-credentials.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel-credentials.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel-options.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel-options.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channel.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channelz.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/channelz.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/client-interceptors.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/client-interceptors.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/client.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/compression-filter.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/control-plane-status.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/control-plane-status.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/deadline.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/deadline.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/error.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/error.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/filter-stack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/filter-stack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/http_proxy.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/http_proxy.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/internal-channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/internal-channel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/internal-channel.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/internal-channel.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-child-handler.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-child-handler.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-outlier-detection.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-outlier-detection.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-pick-first.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-pick-first.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-round-robin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer-round-robin.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancer.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancing-call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/load-balancing-call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/logging.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/logging.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/logging.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/logging.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/make-client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/make-client.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/max-message-size-filter.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/max-message-size-filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/max-message-size-filter.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/metadata.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/metadata.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/picker.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/picker.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-dns.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-dns.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-ip.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-ip.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-uds.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver-uds.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolver.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolving-call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolving-call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolving-load-balancer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/resolving-load-balancer.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/retrying-call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/retrying-call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-call.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-call.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-credentials.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server-credentials.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/server.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/service-config.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/service-config.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/status-builder.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/status-builder.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/stream-decoder.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-address.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-address.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-call.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-call.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-call.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-call.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-pool.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel-pool.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/subchannel.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/tls-helpers.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/tls-helpers.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/transport.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/uri-parser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/build/src/uri-parser.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/compression-filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/compression-filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/internal-channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/internal-channel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/max-message-size-filter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/server-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/server-call.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/stream-decoder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/stream-decoder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/subchannel-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/subchannel-call.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/transport.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@grpc/grpc-js/src/transport.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/console.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/console.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/diagnostics_channel.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/diagnostics_channel.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dns.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/dns.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dns/promises.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/dns/promises.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/http.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/http2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/https.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/https.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/net.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/net.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/os.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/os.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/path.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/path.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/punycode.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/punycode.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/querystring.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/querystring.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/readline.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/readline.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/repl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/repl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/string_decoder.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/string_decoder.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/test.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/test.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/timers.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/timers.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/trace_events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/trace_events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tty.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tty.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/url.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/url.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/v8.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/v8.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/vm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/vm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/wasi.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/wasi.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/zlib.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/zlib.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/app/dist/esm/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/app/dist/esm/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/app/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/app/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/app/dist/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/app/dist/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/esm/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/esm/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/index.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/app/dist/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/dist/esm/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/dist/esm/index.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/dist/index.node.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/dist/index.node.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/compat/dist/index.rn.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/compat/dist/index.rn.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics-compat.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics-compat.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-analytics.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-app-check.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-app-check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-app-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-app-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-cordova.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-cordova.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-web-extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-auth-web-extension.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-compat.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-compat.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-database.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-compat.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-compat.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore-lite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-firestore.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-installations.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-installations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging-sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-performance-standalone-compat.es2017.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-performance-standalone-compat.es2017.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-performance-standalone-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-performance-standalone-compat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-performance.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-performance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-remote-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-remote-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-vertexai-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-vertexai-preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/firebase/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/firebase/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/light/protobuf.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/minimal/protobuf.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/dist/protobuf.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/debug/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/debug/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/ext/descriptor/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/api/annotations.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/api/annotations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/api/annotations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/api/annotations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/api/http.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/api/http.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/api/http.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/api/http.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/api.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/api.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/api.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/api.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/descriptor.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/descriptor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/descriptor.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/descriptor.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/source_context.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/source_context.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/source_context.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/source_context.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/type.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/type.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/type.proto" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/google/protobuf/type.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/light.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/light.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/light.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/light.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/minimal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/minimal.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/minimal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/minimal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/scripts/postinstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/scripts/postinstall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/converter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/decoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/decoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/encoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/encoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/enum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/field.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/field.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/index-light.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/index-light.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/index-minimal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/index-minimal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/mapfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/mapfield.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/method.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/method.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/namespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/oneof.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/oneof.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/reader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/reader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/reader_buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/reader_buffer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/root.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/roots.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/roots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/rpc.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/rpc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/rpc/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/rpc/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/tokenize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/tokenize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/typescript.jsdoc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/typescript.jsdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/util/longbits.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/util/longbits.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/util/minimal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/util/minimal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/verifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/verifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/wrappers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/wrappers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/writer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/src/writer_buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/src/writer_buffer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/protobufjs/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protobufjs/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +367,9 @@
         <option value="com.haulmont.rcb.index" />
         <option value="com.haulmont.rcb.useInitial" />
         <option value="com.haulmont.rcb.README" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -71,7 +407,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.React Buddy Preview.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/thanush/Documents/projects/commerce/client/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -115,7 +451,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
       </set>
     </attachedChunks>
   </component>
@@ -144,7 +480,12 @@
       <workItem from="1715477206460" duration="43404000" />
       <workItem from="1716296317083" duration="41544000" />
       <workItem from="1717160847553" duration="12132000" />
-      <workItem from="1717506688968" duration="19519000" />
+      <workItem from="1717506688968" duration="20420000" />
+      <workItem from="1718574976394" duration="2947000" />
+      <workItem from="1718761918056" duration="1635000" />
+      <workItem from="1718975102127" duration="8116000" />
+      <workItem from="1718984639687" duration="4813000" />
+      <workItem from="1719510120177" duration="6023000" />
     </task>
     <servers />
   </component>

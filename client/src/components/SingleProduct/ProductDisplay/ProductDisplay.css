@@ -80,6 +80,10 @@
     transform: rotate(-180deg);
 }
 
+.productSizes {
+    font-family: 'Roboto', sans-serif;;
+}
+
 .productButton:active::before {
     scale: 0.7;
 }
@@ -89,6 +93,12 @@
     color: #000;
 }
 
-.productInfo {
+.priceP{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
+.descriptionP{
+    font-size: 1.2rem;
+    font-weight: 400;
 }

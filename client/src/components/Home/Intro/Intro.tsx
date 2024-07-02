@@ -4,7 +4,6 @@ import Button  from "../../reusable/Button/Button";
 
 const Intro = () => {
     const viewProducts = () => {
-        console.log("View Products");
     }
     return (
         <div className="introWrapper">

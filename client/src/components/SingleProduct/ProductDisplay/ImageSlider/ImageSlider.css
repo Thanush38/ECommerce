@@ -1,5 +1,6 @@
 .SliderImageContainer {
-  width: 50vw;
+  width: 40vw;
+  height: 60vh;
   position: relative;
   display: flex;
   justify-content: center;

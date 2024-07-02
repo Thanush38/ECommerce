@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect,useRef} from 'react';
 import './Login.css';
 import Button from '../../reusable/Button/Button';
 import PopUp from './PopUp/PopUp';
@@ -10,6 +10,9 @@ import LoggedShow from "./LoggedShow/LoggedShow";
 const Login = () => {
     const [dropdown, setDropdown] = useState(false);
     const [user, setUser] = useState<any>(null);
+    const [displayName, setDisplayName] = useState<string>("");//[name, setName] = useState(""
+    const navBarLoginSectionRef = useRef<HTMLDivElement>(null);
+
 
     const [loggedInUser, setLoggedInUser] = useState(false);
 
@@ -20,6 +23,7 @@ const Login = () => {
                 // https://firebase.google.com/docs/reference/js/firebase.User
                 setUser(user)
                 setLoggedInUser(true)
+                setDisplayName(user.displayName)
             } else {
                 // User is signed out
                 // ...
@@ -38,10 +42,19 @@ const Login = () => {
         });
     }
 
-    const handleLogin = () => {
+    const handleClickOutside = (event: MouseEvent) => {
+        if (navBarLoginSectionRef.current && !navBarLoginSectionRef.current.contains(event.target as Node)) {
+            setDropdown(false);
+        }
+    };
 
-        console.log("Login")
-    }
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     const handleMouseEnter = () => {
         setDropdown(true);
@@ -52,7 +65,7 @@ const Login = () => {
     const getCurrentDisplay = () => {
         if (!loggedInUser) {
             return <div className="navbarLogin">
-                <Button text="Login" onClick={handleLogin}/>
+                <Button text="Login" onClick={() => console.log("he")}/>
                 {dropdown && <div className="navbarDrop">
 
                     <PopUp />
@@ -62,14 +75,14 @@ const Login = () => {
         }
 
             return <div className="navbarLogout">
-                <LoggedShow email={user.email} logOut={handleLogout} image={user.photoURL}/>
+                <LoggedShow email={user.email} logOut={handleLogout} image={user.photoURL} name={displayName}/>
             </div>
 
 
     }
     return (
         <div>
-            <div className="navBarLoginSection" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className="navBarLoginSection" onMouseEnter={handleMouseEnter}  ref={navBarLoginSectionRef}>
                 {getCurrentDisplay()}
 
 

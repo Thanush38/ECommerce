@@ -1,5 +1,5 @@
 .greenButton {
-    background-color: #4CAF50; /* Green background */
+    background-color: #77d2f7;
     border: none; /* Remove button border */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding */
@@ -12,6 +12,6 @@
   }
   
   .greenButton:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #4da8da;
   }
   

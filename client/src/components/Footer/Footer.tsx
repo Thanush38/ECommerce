@@ -28,13 +28,13 @@ const Footer = () => {
         console.error   ("Something went wrong went contacting the server");
         return
       }
-      console.log("Received from the server: ", request.responseText) // this contains the received payload
+
     }
 
-    console.log("sending the payload")
+
     request.send(JSON.stringify(payload));
 
-    console.log('Form Submitted');
+
   }
 
   return (

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
 import './ProductPage.css';
 import NavBar from "../NavBar/NavBar";
 import ProductCard from "../reusable/ProductCard/ProductCard";
@@ -8,6 +8,8 @@ import ImageViewer from "../reusable/ImageViewer/ImageViewer";
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/Store';
 import { setCart, addItem, removeItem, clearCart } from '../../store/Cart';
+import {apiGet} from "../../Api";
+import Button from "../reusable/Button/Button";
 
 
 
@@ -36,16 +38,20 @@ const ProductPage = () => {
     const [image, setImage] = useState<string>("");
     let {search} = useParams();
     const dispatch = useDispatch();
-    const cart = useSelector((state: RootState) => state.cart.items);
+    const cart = useSelector((state: RootState) => state.cart.cartItem);
+    const navigate = useNavigate();
+
 
     // Get cart from local storage
     useEffect(() => {
         const fetchCart = () => {
             const cart = localStorage.getItem("cart");
+            
             if (cart) {
                 dispatch(setCart(JSON.parse(cart)));
             } else {
-                dispatch(setCart([]));
+
+                // dispatch(setCart([]));
             }
         };
 
@@ -95,19 +101,16 @@ const ProductPage = () => {
     }, [search]);
     const getProducts = async () => {
         try {
-
-            console.log(search);
             let url = "";
             if(search){
-                url = `http://localhost:8080/server-1.0-SNAPSHOT/api/contents/products/${search}`
+                url = `/contents/products/${search}`
             }else{
-                url = "http://localhost:8080/server-1.0-SNAPSHOT/api/contents/products";
+                url = "/contents/products";
             }
-            const response:Response = await fetch(url);
-            const data = await response.json();
-            // console.log(data)
-            // console.log(data.items[0])
-            return data.items;
+            const data = await apiGet(url);
+            console.log(data);
+            return data.data.items;
+
         } catch (error) {
             console.log(error);
         }
@@ -124,7 +127,7 @@ const ProductPage = () => {
 
 
     const getHTML = products?.map((outerProduct: Product) => {
-        console.log("outerProduo", outerProduct);
+
         let product = outerProduct;
 
         return <div className={"singleProducts"} key={product.id}><ProductCard id={product.id} title={product.name} image={product.image} price={product.price} sizes={product.sizes} func={()=>handleImageClick(product.image)} /></div>;
@@ -136,6 +139,7 @@ const ProductPage = () => {
                 <div className="productPage" >
 
                     {showImage && <ImageViewer image={image} func={handleImageClose}/>}
+                    { products==null && <div className={"noProductsContainer"}><h1 className={"noProductsP"}>No products found</h1><Button text={"View Other Products"} onClick={() => navigate("/products")}></Button></div> }
                     {getHTML}
                 </div>
             <Footer />

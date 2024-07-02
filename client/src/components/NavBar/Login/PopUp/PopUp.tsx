@@ -1,14 +1,16 @@
 import React from 'react';
 import {useState} from 'react';
 import './popUp.css';
-import {auth} from "../../../../firebase";
-import {  signInWithEmailAndPassword ,createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, getAuth  } from 'firebase/auth';
+import {auth, database} from "../../../../firebase";
+import {  signInWithEmailAndPassword ,createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, getAuth, updateProfile  } from 'firebase/auth';
+import { doc, setDoc } from "firebase/firestore";
 const PopUp = () => {
+    const [name, setName] = useState("");//[name, setName] = useState(""
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    let name = "";
 
-    const onLogin = (e:any) => {
+
+    const onLogin = async (e:any) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -17,10 +19,11 @@ const PopUp = () => {
                 console.log(user);
             })
             .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                console.log(errorCode, errorMessage)
+                alert("Invalid credentials")
+
+
             });
+
 
     }
 
@@ -32,12 +35,26 @@ const PopUp = () => {
                 // Signed in
                 const user = userCredential.user;
                 console.log(user);
+                updateProfile(user, {
+                    displayName: name
+                })
+                let customId = user.uid;
             })
             .catch((error) => {
+                console.log(error)
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log(errorCode, errorMessage);
-                // ..
+                console.log(errorCode)
+                if(errorCode === "auth/email-already-in-use"){
+                    alert("Email already in use")
+                } else if(errorCode === "auth/weak-password"){
+                    alert("Password should be at least 6 characters")
+                } else if(errorCode === "auth/invalid-email"){
+                    alert("Invalid email")
+                } else {
+                    alert(errorMessage)
+                }
+
             });
 
 
@@ -106,7 +123,7 @@ const PopUp = () => {
                                     <div className="title">Sign up</div>
                                     <form action="" className="flip-card__form">
                                         <input type="name" placeholder="Name" className="flip-card__input"
-                                               onChange={(e) => name = e.target.value}/>
+                                               onChange={(e) => setName(e.target.value)}/>
                                         <input type="email" placeholder="Email" name="email"
                                                className="flip-card__input" onChange={(e) => setEmail(e.target.value)}/>
                                         <input type="password" placeholder="Password" name="password"

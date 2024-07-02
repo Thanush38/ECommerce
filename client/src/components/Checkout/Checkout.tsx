@@ -6,6 +6,7 @@ import CheckoutSingleProduct from "./CheckoutSingleProduct/CheckoutSingleProduct
 import {useDispatch} from "react-redux";
 import {removeItem, setCart} from "../../store/Cart";
 import Button from "../reusable/Button/Button";
+import {apiPost} from "../../Api";
 
 type pricing = {
     subtotal: number,
@@ -34,10 +35,11 @@ const Checkout = () => {
             if (cart) {
                 const parsedCart = JSON.parse(cart);
                 dispatch(setCart(parsedCart));
-                setCurrentCart(parsedCart);
-                calculateEverything(parsedCart)
+                setCurrentCart(parsedCart.items);
+                console.log("parsedCart", parsedCart);
+                calculateEverything(parsedCart.items)
             } else {
-                dispatch(setCart([]));
+                // dispatch(setCart());
                 setCurrentCart([]);
             }
         };
@@ -96,11 +98,11 @@ const Checkout = () => {
     }
 
     const calculateEverything = async (parsedCart: any) => {
-        console.log("calculate everythin", currentCart);
-        let total = getSubTotal(parsedCart);
-        let tax = getTax(total);
-        let shipping = await getShipping(pricing.foundShipping);
-        let totalCost = total + tax + shipping;
+        console.log("parsedCart", parsedCart)
+        let total:number = getSubTotal(parsedCart)
+        let tax:number = getTax(total);
+        let shipping:number = await getShipping(pricing.foundShipping);
+        let totalCost:number = total + tax + shipping;
         setPricing({
             ...pricing,
             subtotal: total,
@@ -111,8 +113,9 @@ const Checkout = () => {
     }
 
     const getSubTotal = (parsedCart:any) => {
-        let total = 0;
+        let total:number = 0;
         parsedCart.forEach((item: any) => {
+            console.log("item price", item.price)
             total += item.price * item.quantity;
 
         });
@@ -135,15 +138,11 @@ const Checkout = () => {
             city: City,
             postalCode: PostalCode
         }
-        const response = await fetch('http://localhost:8080/server-1.0-SNAPSHOT/api/contents/shipping', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-        const responseData = await response.json();
-        console.log(responseData);
+
+        const response = await apiPost('contents/shipping', data);
+
+        const responseData = await response.data;
+
         let shipping:number = responseData.shipping;
         return shipping;
 
