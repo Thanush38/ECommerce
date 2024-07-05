@@ -5,125 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/CORSEnabler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/ImageServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/EmailServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/ImageReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/commerce/server/util/ProductReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/AlluVai/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/AlluVai/Example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/AlluVai/Main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/ItemsCopy 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/PrabhasBahu/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/PrabhasBahu/PrabhasBahu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/LeoVijay 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/LeoVijay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example1 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example2 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Images/VijayExample/example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ImplementVijay 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ImplementVijay.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/hidden/Mail.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/AlluVai/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/AlluVai/Example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/AlluVai/Main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/ItemsCopy 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/PrabhasBahu/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/PrabhasBahu/PrabhasBahu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/LeoVijay 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/LeoVijay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/example1 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/example2 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Images/VijayExample/example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ImplementVijay 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ImplementVijay.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/hidden/Mail.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/CORSEnabler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/ImageServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/EmailServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/EmailServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/ImageReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/commerce/server/util/ProductReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/META-INF/MANIFEST 2.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/AlluVai/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/AlluVai/Example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/AlluVai/Main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/ItemsCopy 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/PrabhasBahu/Example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/PrabhasBahu/PrabhasBahu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/LeoVijay 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/LeoVijay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/example1 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/example1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/example2 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Images/VijayExample/example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ImplementVijay 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ImplementVijay.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/Items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ItemsCopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/Items/ItemsPractice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/hidden/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/CORSEnabler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/ImageServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/JSONFileHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/ProductReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/EmailServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/EmailServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/ImageReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/classes/org/commerce/server/util/ProductReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/angus-activation-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-2.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/jakarta.mail-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/json-20220924.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/WebApplication1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/WebApplication1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/WebApplication1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/WebApplication1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,28 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;merge&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/thanush/Documents/projects/commerce/client&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.React Buddy Preview.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/thanush/Documents/projects/commerce/client/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/thanush/Documents/projects/commerce/client",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.React Buddy Preview.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/thanush/Documents/projects/commerce/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -266,7 +150,7 @@
       <workItem from="1719510120177" duration="6023000" />
       <workItem from="1719939373439" duration="4834000" />
       <workItem from="1720018857128" duration="6938000" />
-      <workItem from="1720146457799" duration="3839000" />
+      <workItem from="1720146457799" duration="4728000" />
     </task>
     <servers />
   </component>
