@@ -103,9 +103,9 @@ const ProductPage = () => {
         try {
             let url = "";
             if(search){
-                url = `/contents/products/${search}`
+                url = `products/${search}`
             }else{
-                url = "/contents/products";
+                url = "products";
             }
             const data = await apiGet(url);
             console.log(data);

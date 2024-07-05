@@ -1,0 +1,105 @@
+{"items":[
+
+    {
+        "id": "10001",
+        "name": "Leo Vijay",
+        "price": 100,
+        "quantity": 1,
+        "description": "This is a poster made for the Movie Leo. The Posters contains Thalapathy Vijay and Sanjay Dutt, This movie was directed by Lokesh Kanagaraj. ",
+        "image": "https://i.pinimg.com/originals/4e/5a/98/4e5a980d8fe546ed0613a58427e02113.jpg",
+        "sizes": {
+
+            "24x20": {
+                "price": 100,
+                "quantity": 1,
+                "sizeId": 100012420
+            },
+
+            "36x24":{
+                "price": 150,
+                "quantity": 1,
+                "sizeId": 100013624
+            },
+            "48x36": {
+                "price": 200,
+                "quantity": 1,
+                "sizeId": 100014836
+            }
+        },
+        "keyWords": ["Vijay", "Thalapathy", "Actor", "Poster", "Movies","10001"],
+        "images": [
+            "/Images/VijayExample/LeoVijay.png",
+            "/Images/VijayExample/example1.png",
+            "/Images/VijayExample/example2.png"
+        ],
+        "imageLocation": "/Images/VijayExample"
+    },
+    {
+        "id": "10002",
+        "name": "Bahubali Prabhas",
+        "price": 100,
+        "quantity": 1,
+        "description": "This is a poster a scene from the movie Bahubali. The Posters contains Prabhas. This movie was directed by S.S. Rajamouli. ",
+        "image": "https://i.pinimg.com/564x/58/d4/09/58d40961167083e3a8a1a76cb081a1f8.jpg",
+        "sizes": {
+
+            "24x20": {
+                "price": 100,
+                "quantity": 1,
+                "sizeId": 100022420
+            },
+
+            "36x24":{
+                "price": 150,
+                "quantity": 1,
+                "sizeId": 100023624
+            },
+            "48x36": {
+                "price": 200,
+                "quantity": 1,
+                "sizeId": 100024836
+            }
+        },
+        "keyWords": ["Prabhas", "Rebel Star", "Actor", "Poster", "Movies", "Bahubali","10002"],
+        "images": [
+            "/Images/PrabhasBahu/PrabhasBahu.png",
+            "/Images/PrabhasBahu/Example1.png"
+        ],
+        "imageLocation": "/Images/PrabhasBahu"
+    },
+    {
+        "id": "10003",
+        "name": "Vaikuntapuram Allu Arjun",
+        "price": 100,
+        "quantity": 1,
+        "description": "This is a poster a scene from the movie Vaikuntapuram. The Posters contains Allu Arjun. This movie was directed by Trivikram Srinivas. ",
+        "image": "https://i.pinimg.com/564x/24/69/6e/24696ec580c08dc4f99ab70da8efc855.jpg",
+        "sizes": {
+            "24x20": {
+                "price": 100,
+                "quantity": 1,
+                "sizeId": 100032420
+            },
+
+            "36x24":{
+                "price": 150,
+                "quantity": 1,
+                "sizeId": 100033624
+            },
+
+            "48x36": {
+                "price": 200,
+                "quantity": 1,
+                "sizeId": 10003483622
+            }
+        },
+        "keyWords": ["Allu", "Stylish Star", "Actor", "Poster", "Movies", "Vaikuntapuram", "Ala Vaikuntapuramlo", "Allu Arjun", "Trivikram", "Arjun","10003"],
+        "images": [
+            "/Images/AlluVai/Main.png",
+            "/Images/AlluVai/Example1.png",
+            "/Images/AlluVai/Example2.png"
+        ],
+        "imageLocation": "/Images/AlluVai"
+    }
+]
+}

@@ -34,7 +34,7 @@ const SingleProduct = () => {
 
 
     useEffect(() => {
-        const url: string = '/contents/product/' + id;
+        const url: string = '/product/' + id;
             apiGet(url).then((response) => {
                 setSingleProduct(response.data);
                 setDataLoaded(true);

@@ -139,7 +139,7 @@ const Checkout = () => {
             postalCode: PostalCode
         }
 
-        const response = await apiPost('contents/shipping', data);
+        const response = await apiPost('shipping', data);
 
         const responseData = await response.data;
 

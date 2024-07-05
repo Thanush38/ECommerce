@@ -1,38 +1,43 @@
 import React from 'react'
 import './Footer.css'
 import {ExampleLoaderComponent} from "../../dev/palette";
+import {apiPost} from "../../Api";
 const Footer = () => {
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const url:string = "http://localhost:8080/server-1.0-SNAPSHOT/api/contents/contactemail";
+    const url:string = "sendemail";
     const contentType: string = 'application/json';
 
     let name:string = (e.target as any).gname.value;
     let email:string = (e.target as any).gemail.value;
     let message:string = (e.target as any).gmsg.value;
 
-    const payload = {
+    let payload = {
       name: name,
       email: email,
       message: message
     }
+    const sendPayload:string = JSON.stringify(payload);
+    console.log(sendPayload);
 
-    const request = new XMLHttpRequest();
-    request.open("POST", url);                              // setting the method
-    request.setRequestHeader("Content-Type", "application/json");  // setting the sending content-type
-    request.setRequestHeader("Accept", contentType);
-
-    // on response handler
-    request.onload = () => {
-      if (request.status !== 200) {
-        console.error   ("Something went wrong went contacting the server");
-        return
-      }
-
-    }
+    // fetch('http://localhost:5001/sendemail',{
+    //   method: 'POST',
+    //   headers:{'Content-type':'application/json'},
+    //   body: sendPayload
+    // }).then(r=>r.json()).then(res=>{
+    //   if(res){
+    //     console.log('New Employee is Created Successfully');
+    //   }
+    // });
 
 
-    request.send(JSON.stringify(payload));
+    apiPost(url, payload, {headers: {'Content-Type': contentType}})
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
 
 
   }
