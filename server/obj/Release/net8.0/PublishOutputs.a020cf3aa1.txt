@@ -1,0 +1,14 @@
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/server
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/appsettings.json
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/resources/Development.json
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/server.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/server.deps.json
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/server.runtimeconfig.json
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/server.pdb
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Newtonsoft.Json.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/thanush/Documents/projects/commerce/server/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll

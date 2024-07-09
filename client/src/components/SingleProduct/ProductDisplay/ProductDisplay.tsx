@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProductDisplay.css';
-import { Slide } from 'react-slideshow-image';
 import ImageSlider from "./ImageSlider/ImageSlider";
 import {useDispatch} from "react-redux";
 import cart, {setCart} from "../../../store/Cart";

@@ -4,7 +4,6 @@ import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import ProductDisplay from "./ProductDisplay/ProductDisplay";
 import Loader from "../reusable/Loader/Loader";
-import axios from 'axios';
 import {useParams} from 'react-router-dom';
 import {apiGet} from "../../Api";
 

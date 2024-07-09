@@ -1,0 +1,32 @@
+#FROM node:14-alpine AS development
+#
+#WORKDIR /app
+##
+### This is separate so layers are cached nicely
+#COPY ./package.json ./app
+#COPY ./package-lock.json ./app
+#
+##COPY ./package.json /app/package.json
+##COPY ./package-lock.json /app/package-lock.json
+#
+#RUN npm i
+#COPY . .
+#
+#CMD ["pwd"]
+#CMD ["ls"]
+#
+#CMD ["cd", "/app"]
+#CMD ["npm", "start"]
+
+FROM node:18-alpine AS development
+
+WORKDIR /App
+
+COPY public/ /App/public
+COPY src/ /App/src
+COPY package.json /App/
+COPY package-lock.json /App/
+
+RUN npm install
+
+CMD ["npm", "start"]
