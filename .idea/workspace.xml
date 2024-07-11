@@ -6,27 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Error/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Error/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Sections/Sections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/Sections/Sections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/AboutUs/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/InfoPages/AboutUs/AboutUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/InfoPages/Policy/Policy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/InfoPages/Policy/Policy.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/LoggedShow/LoggedShow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProductPage/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/ProductDisplay/ProductDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SingleProduct/SingleProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/Store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/Store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Dockerfile_API" beforeDir="false" afterPath="$PROJECT_DIR$/server/Dockerfile_API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" afterDir="false" />
@@ -77,7 +73,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;deployment&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/thanush/Documents/projects/commerce/client&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -209,8 +205,6 @@
       <workItem from="1720453777490" duration="73000" />
       <workItem from="1720453959168" duration="9005000" />
       <workItem from="1720552428965" duration="1409000" />
-      <workItem from="1720554003236" duration="1132000" />
-      <workItem from="1720664071912" duration="677000" />
     </task>
     <servers />
   </component>
