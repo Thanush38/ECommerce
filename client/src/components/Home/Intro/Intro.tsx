@@ -1,6 +1,6 @@
 import React from 'react';
 import './Intro.css';
-import Button  from "../../reusable/Button/Button";
+import Button  from "../../reusable/Button/Button.tsx";
 
 const Intro = () => {
     const viewProducts = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import {ExampleLoaderComponent} from "../../dev/palette";
-import {apiPost} from "../../Api";
+import {apiPost} from "../../Api.ts";
 const Footer = () => {
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

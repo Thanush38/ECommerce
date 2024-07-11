@@ -1,12 +1,12 @@
 import React,{useState, useEffect} from 'react';
 import './Checkout.css';
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
-import CheckoutSingleProduct from "./CheckoutSingleProduct/CheckoutSingleProduct";
+import NavBar from "../NavBar/NavBar.tsx";
+import Footer from "../Footer/Footer.tsx";
+import CheckoutSingleProduct from "./CheckoutSingleProduct/CheckoutSingleProduct.tsx";
 import {useDispatch} from "react-redux";
-import {removeItem, setCart} from "../../store/Cart";
-import Button from "../reusable/Button/Button";
-import {apiPost} from "../../Api";
+import {removeItem, setCart} from "../../store/Cart.tsx";
+import Button from "../reusable/Button/Button.tsx";
+import {apiPost} from "../../Api.ts";
 
 type pricing = {
     subtotal: number,

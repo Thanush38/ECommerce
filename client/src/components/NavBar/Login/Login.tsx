@@ -1,10 +1,10 @@
 import React, {useState, useEffect,useRef} from 'react';
 import './Login.css';
-import Button from '../../reusable/Button/Button';
-import PopUp from './PopUp/PopUp';
+import Button from '../../reusable/Button/Button.tsx';
+import PopUp from './PopUp/PopUp.tsx';
 import {auth} from "../../../firebase";
 import {onAuthStateChanged, signOut} from "firebase/auth";
-import LoggedShow from "./LoggedShow/LoggedShow";
+import LoggedShow from "./LoggedShow/LoggedShow.tsx";
 
 
 const Login = () => {

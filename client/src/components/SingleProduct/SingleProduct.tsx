@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import './SingleProduct.css';
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
-import ProductDisplay from "./ProductDisplay/ProductDisplay";
-import Loader from "../reusable/Loader/Loader";
+import NavBar from "../NavBar/NavBar.tsx";
+import Footer from "../Footer/Footer.tsx";
+import ProductDisplay from "./ProductDisplay/ProductDisplay.tsx";
+import Loader from "../reusable/Loader/Loader.tsx";
 import {useParams} from 'react-router-dom';
-import {apiGet} from "../../Api";
+import {apiGet} from "../../Api.ts";
 
 type Size = {
     price: number;

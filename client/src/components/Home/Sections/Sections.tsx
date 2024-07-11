@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sections.css'
 import {useState, useEffect} from 'react'
-import Cards from './Cards/Cards'
+import Cards from './Cards/Cards.tsx'
 import {useNavigate} from 'react-router-dom'
 
 const Sections = () => {

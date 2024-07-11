@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {useParams, useNavigate} from 'react-router-dom';
 import './ProductPage.css';
-import NavBar from "../NavBar/NavBar";
-import ProductCard from "../reusable/ProductCard/ProductCard";
-import Footer from "../Footer/Footer";
-import ImageViewer from "../reusable/ImageViewer/ImageViewer";
+import NavBar from "../NavBar/NavBar.tsx";
+import ProductCard from "../reusable/ProductCard/ProductCard.tsx";
+import Footer from "../Footer/Footer.tsx";
+import ImageViewer from "../reusable/ImageViewer/ImageViewer.tsx";
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store/Store';
-import { setCart, addItem, removeItem, clearCart } from '../../store/Cart';
-import {apiGet} from "../../Api";
-import Button from "../reusable/Button/Button";
+import { RootState } from '../../store/Store.tsx';
+import { setCart, addItem, removeItem, clearCart } from '../../store/Cart.tsx';
+import {apiGet} from "../../Api.ts";
+import Button from "../reusable/Button/Button.tsx";
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
-import NavBar from "../../NavBar/NavBar";
-import Footer from "../../Footer/Footer";
+import NavBar from "../../NavBar/NavBar.tsx";
+import Footer from "../../Footer/Footer.tsx";
 import LogoImage from "../../../images/WhiteLogo.png"
 
 const AboutUs = () => {

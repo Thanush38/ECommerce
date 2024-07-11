@@ -1,8 +1,8 @@
 import React from 'react';
 import './ProductDisplay.css';
-import ImageSlider from "./ImageSlider/ImageSlider";
+import ImageSlider from "./ImageSlider/ImageSlider.tsx";
 import {useDispatch} from "react-redux";
-import cart, {setCart} from "../../../store/Cart";
+import cart, {setCart} from "../../../store/Cart.tsx";
 import {auth} from "../../../firebase";
 
 type Size = {

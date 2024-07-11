@@ -1,8 +1,8 @@
 import React from 'react'
 import './NavBar.css'
-import Button from '../reusable/Button/Button'
-import Search from './Search/Search'
-import Login from './Login/Login'
+import Button from '../reusable/Button/Button.tsx'
+import Search from './Search/Search.tsx'
+import Login from './Login/Login.tsx'
 import logoText from '../../images/Text.png'
 type NavBarProps = {
   active: string

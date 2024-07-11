@@ -1,12 +1,12 @@
 import './App.css';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home.tsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ProductPage from './components/ProductPage/ProductPage'
-import AboutUs from "./components/InfoPages/AboutUs/AboutUs";
-import Error from "./components/Error/Error";
-import Policy from "./components/InfoPages/Policy/Policy";
-import Checkout from "./components/Checkout/Checkout";
-import SingleProduct from "./components/SingleProduct/SingleProduct";
+import ProductPage from './components/ProductPage/ProductPage.tsx'
+import AboutUs from "./components/InfoPages/AboutUs/AboutUs.tsx";
+import Error from "./components/Error/Error.tsx";
+import Policy from "./components/InfoPages/Policy/Policy.tsx";
+import Checkout from "./components/Checkout/Checkout.tsx";
+import SingleProduct from "./components/SingleProduct/SingleProduct.tsx";
 function App() {
   return (
       <Router>

@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './LoggedShow.css';
 import {connect} from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../../../store/Store';
-import { setCart, addItem, removeItem, clearCart } from '../../../../store/Cart';
+import { RootState } from '../../../../store/Store.tsx';
+import { setCart, addItem, removeItem, clearCart } from '../../../../store/Cart.tsx';
 import {useNavigate} from "react-router-dom";
 
 type LoggedShowProps = {

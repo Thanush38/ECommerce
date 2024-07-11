@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from "../../NavBar/NavBar";
-import Footer from "../../Footer/Footer";
+import NavBar from "../../NavBar/NavBar.tsx";
+import Footer from "../../Footer/Footer.tsx";
 import "./Policy.css"
 
 
