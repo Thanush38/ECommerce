@@ -1,4 +1,4 @@
-namespace WebApplication1.Models;
+namespace server.Models;
 
 public class EmailData
 {

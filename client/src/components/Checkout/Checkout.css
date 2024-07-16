@@ -168,9 +168,6 @@ ul li:hover {
     font-size:1.2rem;
     color:#fff;
     cursor:pointer;
-    position:absolute;
-    bottom:18px;
-    width:calc(100% - 50px);
     -webkit-transition:all .2s ease;
     transition:all .2s ease;
 }
@@ -229,9 +226,11 @@ ul li:hover {
     box-sizing:border-box;
     padding-left:25px;
     padding-right:25px;
+    margin-bottom: 50px;
     border-top-right-radius:30px;
     border-bottom-right-radius:30px;
     position:relative;
+    overflow: scroll;
 }
 .dropdown-btn {
     background:rgba(255,255,255,0.1);

@@ -1,9 +1,12 @@
 import React from 'react';
 import './Intro.css';
 import Button  from "../../reusable/Button/Button";
+import {useNavigate} from "react-router-dom";
 
 const Intro = () => {
+    const navigate = useNavigate();
     const viewProducts = () => {
+        navigate("/products");
     }
     return (
         <div className="introWrapper">

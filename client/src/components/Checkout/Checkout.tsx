@@ -3,10 +3,12 @@ import './Checkout.css';
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import CheckoutSingleProduct from "./CheckoutSingleProduct/CheckoutSingleProduct";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {removeItem, setCart} from "../../store/Cart";
 import Button from "../reusable/Button/Button";
 import {apiPost} from "../../Api";
+import {RootState} from "../../store/Store";
+import {auth} from "../../firebase";
 
 type pricing = {
     subtotal: number,
@@ -15,9 +17,19 @@ type pricing = {
     foundShipping: boolean,
     total: number
 }
+type orderDetails = {
+    FullName: string,
+    Email: string,
+    PhoneNumber: string,
+    CardNumber: string,
+    CardHolder: string,
+    Expires: string,
+    CVC: string
+}
 const Checkout = () => {
     const dispatch = useDispatch();
-    const [currentCart, setCurrentCart] = useState<JSON[]>([]);
+    const cart = useSelector((state: RootState) => state.cart.cartItem);
+    const [currentCart, setCurrentCart] = useState<any>([]);
     const [pricing, setPricing] = useState<pricing>({
         subtotal: 0,
         tax: 0,
@@ -28,19 +40,55 @@ const Checkout = () => {
     const [Address, setAddress] = useState<string>('');
     const [City, setCity] = useState<string>('');
     const [PostalCode, setPostalCode] = useState<string>('');
+    const [orderDetails, setOrderDetails] = useState<orderDetails>({
+        FullName: '',
+        Email: '',
+        PhoneNumber: '',
+        CardNumber: '',
+        CardHolder: '',
+        Expires: '',
+        CVC: ''
+    });
+
+    // useEffect(() => {
+    //     const fetchCart = () => {
+    //         const cart = localStorage.getItem("cart");
+    //         if (cart) {
+    //             const parsedCart = JSON.parse(cart);
+    //             dispatch(setCart(parsedCart));
+    //             // setCurrentCart(parsedCart.items);
+    //             console.log("parsedCart", parsedCart);
+    //             calculateEverything(parsedCart.items)
+    //         } else {
+    //             // dispatch(setCart());
+    //             setCurrentCart([]);
+    //         }
+    //     };
+    //
+    //     const handleStorageChange = (event: StorageEvent) => {
+    //         if (event.key === "cart") {
+    //             fetchCart();
+    //         }
+    //     };
+    //
+    //     window.addEventListener('storage', handleStorageChange);
+    //
+    //     fetchCart();
+    //
+    //
+    //     return () => {
+    //         window.removeEventListener('storage', handleStorageChange);
+    //     };
+    // }, [dispatch]);
 
     useEffect(() => {
         const fetchCart = () => {
             const cart = localStorage.getItem("cart");
             if (cart) {
-                const parsedCart = JSON.parse(cart);
-                dispatch(setCart(parsedCart));
-                setCurrentCart(parsedCart.items);
-                console.log("parsedCart", parsedCart);
-                calculateEverything(parsedCart.items)
+                dispatch(setCart(JSON.parse(cart)));
+                calculateEverything(JSON.parse(cart).items);
             } else {
-                // dispatch(setCart());
-                setCurrentCart([]);
+                // dispatch(setCart([]));
             }
         };
 
@@ -54,16 +102,20 @@ const Checkout = () => {
 
         fetchCart();
 
-
         return () => {
             window.removeEventListener('storage', handleStorageChange);
         };
     }, [dispatch]);
 
+    useEffect(() => {
+
+        setCurrentCart(cart.items);
+    }, [cart]);
+
     const incrementQuantity = (id: string, size: string) => {
         let cartData = JSON.parse(localStorage.getItem("cart") || "[]");
-        let index = cartData.findIndex((item: any) => (item.id === id && item.size === size));
-        cartData[index].quantity += 1;
+        let index = cartData.items.findIndex((item: any) => (item.id === id && item.size === size));
+        cartData.items[index].quantity += 1;
         localStorage.setItem("cart", JSON.stringify(cartData));
         // setCart(cartData);
         dispatch(setCart((cartData)));
@@ -73,15 +125,15 @@ const Checkout = () => {
 
     const decrementQuantity = (id: string, size: string) => {
         let cartData = JSON.parse(localStorage.getItem("cart") || "[]");
-        let index = cartData.findIndex((item: any) => (item.id === id && item.size === size));
-        if(cartData[index].quantity) {
-            if (cartData[index].quantity === 1) {
-                cartData.splice(index, 1);
+        let index = cartData.items.findIndex((item: any) => (item.id === id && item.size === size));
+        if(cartData.items[index].quantity) {
+            if (cartData.items[index].quantity === 1) {
+                cartData.items.splice(index, 1);
                 localStorage.setItem("cart", JSON.stringify(cartData));
 
                 dispatch(setCart(cartData));
             } else {
-                cartData[index].quantity -= 1;
+                cartData.items[index].quantity -= 1;
                 localStorage.setItem("cart", JSON.stringify(cartData));
                 setCart(cartData);
                 dispatch(setCart((cartData)));
@@ -91,8 +143,8 @@ const Checkout = () => {
 
     const deleteProduct = (id: string, size: string) => {
         let cartData = JSON.parse(localStorage.getItem("cart") || "[]");
-        let index = cartData.findIndex((item: any) => (item.id === id && item.size === size));
-        cartData.splice(index, 1);
+        let index = cartData.items.findIndex((item: any) => (item.id === id && item.size === size));
+        cartData.items.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(cartData));
         dispatch(setCart((cartData)));
     }
@@ -142,8 +194,9 @@ const Checkout = () => {
         const response = await apiPost('shipping', data);
 
         const responseData = await response.data;
+        console.log("responseData", responseData)
 
-        let shipping:number = responseData.shipping;
+        let shipping:number = responseData;
         return shipping;
 
     }
@@ -164,23 +217,50 @@ const Checkout = () => {
 
     }
 
+    const handleOrderDetails = (e: any) => {
+        setOrderDetails({
+            ...orderDetails,
+            [e.target.name]: e.target.value
+        });
+    }
+
+    const getUserId = async () => {
+        const user = await auth.currentUser;
+        if(user) {
+            return user.uid;
+        } else {
+            return null;
+        }
+    }
+
+    const submitOrder = async () => {
+        const userId = await getUserId();
+        const data = {
+            Id: userId,
+            Delivery: {
+                Address: Address,
+                City: City,
+                PostalCode: PostalCode
+            },
+            OrderDetails: orderDetails,
+            Cart: currentCart,
+            pricing: pricing
+        }
+
+        let payload = JSON.stringify(data).replace(/"/g, '\\"');
+        // let payload = JSON.stringify(data);
+        console.log(payload);
+
+        const response = await apiPost('api/BodyTypes/order', payload);
+        const responseData = await response.data;
+        console.log("responseData", responseData);
 
 
-    // const getSingleProducts = () => {
-    //     if(currentCart) {
-    //         return currentCart.map((item: any) => {
-    //             return getSingleProduct;
-    //         });
-    //     } else {
-    //         return <div>Nothing in Cart</div>
-    //     }
-    //
-    // }
+    }
 
-    // const getSingleProducts = currentCart?.map((item: any) => {
-    //
-    //     return <div key={item.id}><CheckoutSingleProduct id={item.id} name={item.name} image={item.image} price={item.price} size={item.size} quantity={item.quantity} decrementQuantity={decrementQuantity} incrementQuantity={incrementQuantity} deleteProduct={deleteProduct} /></div>
-    // });
+
+
+
 
     const getSingleProducts = currentCart?.length ? (
         currentCart.map((item: any) => (
@@ -275,6 +355,11 @@ const Checkout = () => {
                                 <button className={"FindCostBTN"} onClick={() =>calculateEverything(currentCart)}>Find Cost</button>
 
                             </div>
+                            <div className={"chechkoutDetails"}>
+                                <input className={"input-field"} placeholder={"Enter Full Name"} onChange={handleOrderDetails} name={"FullName"}/>
+                                <input className={"input-field"} placeholder={"Enter Email"} onChange={handleOrderDetails} name={"Email"}/>
+                                <input className={"input-field"} placeholder={"Enter Phone Number"} onChange={handleOrderDetails} name={"PhoneNumber"}/>
+                            </div>
                             <table className='half-input-table'>
                                 <tbody>
                                 <tr>
@@ -362,20 +447,20 @@ const Checkout = () => {
                                 alt='Credit Card'
                             />
                             Card Number
-                            <input className='input-field'></input>
+                            <input className='input-field' onChange={handleOrderDetails} name={"CardNumber"}/>
                             Card Holder
-                            <input className='input-field'></input>
+                            <input className='input-field' onChange={handleOrderDetails} name={"CardHolder"}/>
                             <table className='half-input-table'>
                                 <tr>
                                     <td> Expires
-                                        <input className='input-field'></input>
+                                        <input className='input-field' onChange={handleOrderDetails} name={"Expires"}/>
                                     </td>
                                     <td>CVC
-                                        <input className='input-field'></input>
+                                        <input className='input-field' onChange={handleOrderDetails} name={"CVC"}/>
                                     </td>
                                 </tr>
                             </table>
-                            <button className='pay-btn'>Checkout</button>
+                            <button className='pay-btn' onClick={submitOrder}>Pay</button>
 
                         </div>
 

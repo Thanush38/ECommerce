@@ -1,4 +1,4 @@
-using WebApplication1.Models;
+using server.Models;
 
 namespace Utils;
 using System.Net;
