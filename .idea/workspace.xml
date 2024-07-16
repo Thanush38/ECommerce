@@ -5,28 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/Controllers/OrderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Models/OrderData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Models/ShippingData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/utils/CreateOrder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Choices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Singleproduct.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Checkout/Checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/Intro/Intro.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Models/EmailData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/Models/EmailData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/SendingEmails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/utils/SendingEmails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +102,11 @@
       <recent name="$PROJECT_DIR$/client/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/client/src/components/NavBar" />
       <recent name="$PROJECT_DIR$/client/src/images" />
-      <recent name="$PROJECT_DIR$/server/src/main/resources/hidden" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
