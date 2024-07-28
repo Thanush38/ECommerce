@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84316d1d-4f7e-4bb3-b03d-8832e21c686f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Checkout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Choices.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Singleproduct.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/net8.0/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/ref/server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/refint/server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net8.0/server.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/reusable/Button/Button.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +187,7 @@
       <workItem from="1720453777490" duration="73000" />
       <workItem from="1720453959168" duration="9005000" />
       <workItem from="1720552428965" duration="1409000" />
+      <workItem from="1721744943182" duration="812000" />
     </task>
     <servers />
   </component>
